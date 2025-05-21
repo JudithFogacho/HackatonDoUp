@@ -17,26 +17,24 @@ class WorldIDService {
       'Content-Type': 'application/json'
     };
   
-    // Asegúrate de que estos campos coincidan exactamente con lo que espera la API
     const payload = {
       merkle_root: verificationData.merkle_root,
       nullifier_hash: verificationData.nullifier_hash,
       proof: verificationData.proof,
-      verification_level: verificationData.credential_type,
-      action: verificationData.action || worldIdConfig.ACTION_NAME,
-      signal: verificationData.signal || ''
+      verification_level: verificationData.credential_type || 'orb',
+      action: verificationData.action || worldIdConfig.ACTION_NAME
+      // Ya no necesitamos el signal para Mini Apps
     };
   
-    console.log('Payload de verificación a World ID:', {
-      ...payload,
-      nullifier_hash: payload.nullifier_hash.substring(0, 10) + '...',
-      proof: payload.proof.substring(0, 10) + '...'
+    console.log('Enviando verificación a World ID:', {
+      action: payload.action,
+      verification_level: payload.verification_level
     });
   
     try {
       const verifyUrl = `${worldIdConfig.API_BASE_URL}/verify`;
       const response = await axios.post(verifyUrl, payload, { headers });
-      console.log('Respuesta de World ID:', response.data);
+      console.log('Verificación exitosa de World ID');
       return { status: 'verified', data: response.data };
     } catch (error) {
       console.error('World ID verification failed:');
