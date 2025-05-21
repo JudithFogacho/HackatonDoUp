@@ -11,31 +11,32 @@ class WorldIDService {
    * @returns {Promise<Object>} Verification result
    */
   async verifyProof(verificationData) {
-    // Prepare headers with API key
     const headers = {
       'Authorization': `Bearer ${worldIdConfig.API_KEY}`,
       'Content-Type': 'application/json'
     };
   
-    // Prepare the verification payload according to World ID API v2 requirements
     const payload = {
       merkle_root: verificationData.merkle_root,
       nullifier_hash: verificationData.nullifier_hash,
       proof: verificationData.proof,
       verification_level: verificationData.credential_type || 'orb',
-      action: verificationData.action || worldIdConfig.ACTION_NAME
+      action: verificationData.action || worldIdConfig.ACTION_NAME,
+      signal: verificationData.signal || ''
     };
   
     console.log('Sending verification to World ID:', {
       action: payload.action,
-      verification_level: payload.verification_level
+      verification_level: payload.verification_level,
+      merkle_root: payload.merkle_root ? `${payload.merkle_root.substring(0, 10)}...` : 'missing',
+      nullifier_hash: payload.nullifier_hash ? `${payload.nullifier_hash.substring(0, 10)}...` : 'missing',
     });
   
     try {
-      // Make the verification request to World ID's API
       const verifyUrl = `${worldIdConfig.API_BASE_URL}/verify`;
-      const response = await axios.post(verifyUrl, payload, { headers });
+      console.log('Verify URL:', verifyUrl);
       
+      const response = await axios.post(verifyUrl, payload, { headers });
       console.log('World ID verification successful');
       return { status: 'verified', data: response.data };
     } catch (error) {
@@ -47,24 +48,48 @@ class WorldIDService {
         console.error('Error:', error.message);
       }
       
-      // Rethrow with more details for better debugging
-      throw new Error(`Verification failed: ${error.response?.data?.error || error.message}`);
+      // Provide specific error message based on the response
+      if (error.response && error.response.data) {
+        const errorCode = error.response.data.code;
+        const errorMessage = error.response.data.detail || error.response.data.message || 'Unknown error';
+        
+        if (errorCode === 'invalid_proof') {
+          throw new Error(`Invalid proof: ${errorMessage}`);
+        } else if (errorCode === 'invalid_nullifier') {
+          throw new Error(`Invalid nullifier hash: ${errorMessage}`);
+        } else if (errorCode === 'invalid_merkle_root') {
+          throw new Error(`Invalid merkle root: ${errorMessage}`);
+        } else {
+          throw new Error(`Verification failed (${errorCode}): ${errorMessage}`);
+        }
+      }
+      
+      throw new Error(`Verification failed: ${error.message}`);
     }
   }
 
   /**
-   * Generates a secure nonce for wallet authentication
+   * Generates a nonce for wallet authentication
    * @param {number} length - Length of the nonce
    * @returns {string} Generated nonce
    */
   generateNonce(length = 16) {
-    // Create more secure nonce with crypto
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let nonce = '';
     
-    // Generate a random string of specified length
-    for (let i = 0; i < length; i++) {
-      nonce += characters.charAt(Math.floor(Math.random() * characters.length));
+    // Create a cryptographically secure random string
+    const randomValues = new Uint8Array(length);
+    if (typeof crypto !== 'undefined' && crypto.getRandomValues) {
+      crypto.getRandomValues(randomValues);
+      
+      for (let i = 0; i < length; i++) {
+        nonce += characters.charAt(randomValues[i] % characters.length);
+      }
+    } else {
+      // Fallback for environments without crypto
+      for (let i = 0; i < length; i++) {
+        nonce += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
     }
     
     return nonce;
@@ -94,8 +119,28 @@ class WorldIDService {
   }
 
   /**
+   * Gets user profile from World ID
+   * @param {string} accessToken - OAuth access token
+   * @returns {Promise<Object>} User profile
+   */
+  async getUserProfile(accessToken) {
+    try {
+      const response = await axios.get(`${worldIdConfig.API_BASE_URL}/user`, {
+        headers: {
+          'Authorization': `Bearer ${accessToken}`
+        }
+      });
+      
+      return response.data;
+    } catch (error) {
+      console.error('Failed to get user profile:', error.response?.data || error.message);
+      throw new Error('User profile acquisition failed');
+    }
+  }
+
+  /**
    * Verifies a payment transaction with World ID
-   * @param {string} transactionId - World ID transaction ID
+   * @param {string} transactionId - The World ID transaction ID
    * @returns {Promise<Object>} Transaction verification result
    */
   async verifyPayment(transactionId) {
@@ -104,13 +149,21 @@ class WorldIDService {
       'Content-Type': 'application/json'
     };
 
+    const url = `${worldIdConfig.API_BASE_URL}/minikit/transaction/${transactionId}?app_id=${worldIdConfig.APP_ID}`;
+
     try {
-      const url = `${worldIdConfig.API_BASE_URL}/minikit/transaction/${transactionId}?app_id=${worldIdConfig.APP_ID}`;
       const response = await axios.get(url, { headers });
+      console.log('Payment verification successful:', response.data);
       return response.data;
     } catch (error) {
-      console.error('Payment verification failed:', error.response?.data || error.message);
-      throw new Error('Payment verification failed');
+      console.error('Payment verification failed:');
+      if (error.response) {
+        console.error('Status:', error.response.status);
+        console.error('Data:', error.response.data);
+      } else {
+        console.error('Error:', error.message);
+      }
+      throw new Error('Payment verification failed: ' + (error.response?.data?.message || error.message));
     }
   }
 }

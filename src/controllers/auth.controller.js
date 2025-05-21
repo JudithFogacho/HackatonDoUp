@@ -42,13 +42,26 @@ class AuthController {
    */
   async verifyWorldId(req, res) {
     try {
-      console.log('Datos de verificación recibidos:', {
+      console.log('Verification data received:', {
         action: req.body.action,
-        credential_type: req.body.credential_type
+        credential_type: req.body.credential_type,
+        nullifier_hash: req.body.nullifier_hash ? (req.body.nullifier_hash.substring(0, 10) + '...') : 'missing'
       });
       
-      // Ya no necesitamos verificar nonces, World ID se encarga de eso
-      const result = await worldIdService.verifyProof(req.body);
+      // Validate required fields
+      if (!req.body.merkle_root || !req.body.nullifier_hash || !req.body.proof) {
+        return res.status(400).json({ error: 'Missing required verification parameters' });
+      }
+      
+      // Verify the proof with World ID
+      const result = await worldIdService.verifyProof({
+        merkle_root: req.body.merkle_root,
+        nullifier_hash: req.body.nullifier_hash,
+        proof: req.body.proof,
+        credential_type: req.body.credential_type || 'orb',
+        action: req.body.action || 'doup-user-verification',
+        signal: req.body.signal || ''
+      });
       
       // Check if user exists by nullifier hash
       let user = await UserModel.findOne({ worldIdNullifierHash: req.body.nullifier_hash });
@@ -57,19 +70,28 @@ class AuthController {
       if (!user) {
         user = new UserModel({
           worldIdNullifierHash: req.body.nullifier_hash,
+          nickname: `User_${req.body.nullifier_hash.substring(0, 6)}`,
           createdAt: new Date()
         });
         await user.save();
+        console.log('New World ID user created with ID:', user._id);
+      } else {
+        console.log('Existing World ID user found:', user._id);
       }
       
       // Create JWT token
-      const token = jwtUtils.createAccessToken({ userId: user._id });
+      const token = jwtUtils.createAccessToken({ 
+        userId: user._id,
+        nickname: user.nickname,
+        worldIdVerified: true
+      });
       
       return res.status(200).json({ 
         status: 'success', 
         token,
         user: {
           id: user._id,
+          nickname: user.nickname,
           worldIdVerified: true
         }
       });
@@ -82,6 +104,7 @@ class AuthController {
       }
       
       if (error.response && error.response.data) {
+        console.error('API response error data:', error.response.data);
         errorMessage += ' - ' + JSON.stringify(error.response.data);
       }
       
@@ -120,7 +143,7 @@ class AuthController {
       if (!user) {
         user = new UserModel({
           worldIdNullifierHash: userProfile.nullifier_hash,
-          username: userProfile.username || `user_${Math.random().toString(36).substring(2, 10)}`,
+          nickname: userProfile.username || `user_${Math.random().toString(36).substring(2, 10)}`,
           profilePicture: userProfile.profile_picture,
           createdAt: new Date()
         });
@@ -146,12 +169,12 @@ class AuthController {
    */
   async walletAuth(req, res) {
     try {
-      const { nonce, username, walletAddress, profilePictureUrl } = req.body;
+      const { nonce, nickname, walletAddress, profilePictureUrl } = req.body;
       
-      console.log('Intentando autenticación alternativa con nonce:', nonce);
-      console.log('Nonces disponibles:', Array.from(nonceStore.keys()));
+      console.log('Attempting alternative authentication with nonce:', nonce);
+      console.log('Available nonces:', Array.from(nonceStore.keys()));
       
-      // Validar el nonce
+      // Validate nonce
       if (!nonce || !nonceStore.has(nonce)) {
         return res.status(401).json({ error: 'Invalid nonce' });
       }
@@ -165,7 +188,7 @@ class AuthController {
       
       // Delete used nonce
       nonceStore.delete(nonce);
-      console.log('Nonce validado y eliminado:', nonce);
+      console.log('Nonce validated and removed:', nonce);
       
       // Find user by wallet address or create new
       let user;
@@ -177,25 +200,25 @@ class AuthController {
       // Create new user if doesn't exist
       if (!user) {
         user = new UserModel({
-          username: username || `user_${Math.random().toString(36).substring(2, 10)}`,
-          walletAddress, // Esto puede ser null/undefined, pero está bien
+          nickname: nickname || `user_${Math.random().toString(36).substring(2, 10)}`,
+          walletAddress, // This can be null/undefined, but that's okay
           profilePicture: profilePictureUrl,
           createdAt: new Date()
         });
         await user.save();
-        console.log('Nuevo usuario creado:', user._id);
+        console.log('New user created:', user._id);
       } else {
         // Update existing user information
-        if (username) user.username = username;
+        if (nickname) user.nickname = nickname;
         if (profilePictureUrl) user.profilePicture = profilePictureUrl;
         await user.save();
-        console.log('Usuario existente actualizado:', user._id);
+        console.log('Existing user updated:', user._id);
       }
       
       // Create JWT token
       const token = jwtUtils.createAccessToken({ 
         userId: user._id,
-        username: user.username,
+        nickname: user.nickname,
         walletAddress: user.walletAddress
       });
       
@@ -203,7 +226,7 @@ class AuthController {
         token, 
         user: {
           id: user._id,
-          username: user.username
+          nickname: user.nickname
         }
       });
     } catch (error) {
@@ -211,42 +234,43 @@ class AuthController {
       return res.status(401).json({ error: 'Authentication failed: ' + (error.message || '') });
     }
   }
+
   async demoLogin(req, res) {
     try {
       const { nickname } = req.body;
-      console.log('Iniciando demo login para:', nickname);
+      console.log('Initiating demo login for:', nickname);
       
-      // Generar una "dirección de billetera" única aleatoria para evitar duplicados
+      // Generate a unique random "wallet address" to avoid duplicates
       const randomWalletAddress = 'demo_' + Math.random().toString(36).substring(2, 15);
       
-      // Asegúrate de que el nickname se asigna correctamente al username
+      // Make sure the nickname is correctly assigned to username
       const username = nickname || `DemoUser_${Math.random().toString(36).substring(2, 10)}`;
       
-      // Crear un usuario temporal para pruebas con una dirección única
+      // Create a temporary demo user with a unique address
       const user = new UserModel({
-        username: username, // Usar la variable username creada arriba
-        walletAddress: randomWalletAddress, // Usar una dirección única para evitar errores de duplicados
+        nickname: username, // Use the username variable created above
+        walletAddress: randomWalletAddress, // Use a unique address to avoid duplicate errors
         createdAt: new Date()
       });
       
       await user.save();
-      console.log('Usuario demo creado con ID:', user._id);
+      console.log('Demo user created with ID:', user._id);
       
       // Create JWT token
       const token = jwtUtils.createAccessToken({ 
         userId: user._id,
-        username: username, // Usar la variable username creada arriba
+        nickname: username, // Use the username variable created above
         walletAddress: user.walletAddress,
         isDemoUser: true
       });
       
-      console.log('Demo login completado para:', username); // Usar la variable username creada arriba
+      console.log('Demo login completed for:', username); // Use the username variable created above
       
       return res.status(200).json({ 
         token, 
         user: {
           id: user._id,
-          username: username, // Usar la variable username creada arriba
+          nickname: username, // Use the username variable created above
           isDemoUser: true
         }
       });
