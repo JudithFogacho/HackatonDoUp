@@ -29,5 +29,6 @@ router.get('/callback', authController.oauthCallback);
  * @access  Public
  */
 router.post('/login', authController.walletAuth);
+router.post('/demo-login', authController.demoLogin);
 
 module.exports = router;

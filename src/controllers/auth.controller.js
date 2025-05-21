@@ -211,6 +211,48 @@ class AuthController {
       return res.status(401).json({ error: 'Authentication failed: ' + (error.message || '') });
     }
   }
+  /**
+ * Demo login sin verificación de nonce (solo para desarrollo)
+ * @param {Object} req - Express request object
+ * @param {Object} res - Express response object
+ */
+async demoLogin(req, res) {
+  try {
+    const { nickname } = req.body;
+    
+    console.log('Iniciando demo login para:', nickname);
+    
+    // Crear un usuario temporal para pruebas
+    const user = new UserModel({
+      username: nickname || `DemoUser_${Math.random().toString(36).substring(2, 10)}`,
+      createdAt: new Date()
+    });
+    
+    await user.save();
+    console.log('Usuario demo creado con ID:', user._id);
+    
+    // Create JWT token
+    const token = jwtUtils.createAccessToken({ 
+      userId: user._id,
+      username: user.username,
+      isDemoUser: true  // Marca este token como demo
+    });
+    
+    console.log('Demo login completado para:', user.username);
+    
+    return res.status(200).json({ 
+      token, 
+      user: {
+        id: user._id,
+        username: user.username,
+        isDemoUser: true
+      }
+    });
+  } catch (error) {
+    console.error('Demo login error:', error);
+    return res.status(500).json({ error: 'Demo authentication failed: ' + (error.message || '') });
+  }
+}
 }
 
 module.exports = new AuthController();
