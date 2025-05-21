@@ -6,17 +6,22 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 // MongoDB connection
-const connectDB = async () => {
-  try {
-    await mongoose.connect(process.env.MONGODB_URI, {
-      serverSelectionTimeoutMS: 5000 // Timeout after 5s instead of 30s
-    });
-    console.log('MongoDB connected successfully');
-  } catch (error) {
-    console.error('MongoDB connection error:', error);
-    process.exit(1);
-  }
-};
+// Después de la conexión a MongoDB exitosa
+connectDB().then(async () => {
+  console.log('MongoDB connected successfully');
+  
+  // Cargar los trabajos en la base de datos
+  const jobService = require('./services/job.service.js');
+  await jobService.seedJobs();
+  
+  // Iniciar el servidor
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}).catch(error => {
+  console.error('MongoDB connection error:', error);
+  process.exit(1);
+});;
 
 // Connect to database
 connectDB();
