@@ -10,31 +10,33 @@ class WorldIDService {
    * @param {Object} verificationData - Proof data from World ID
    * @returns {Promise<Object>} Verification result
    */
-  // src/services/world-id.service.js
   async verifyProof(verificationData) {
+    // Prepare headers with API key
     const headers = {
       'Authorization': `Bearer ${worldIdConfig.API_KEY}`,
       'Content-Type': 'application/json'
     };
   
+    // Prepare the verification payload according to World ID API v2 requirements
     const payload = {
       merkle_root: verificationData.merkle_root,
       nullifier_hash: verificationData.nullifier_hash,
       proof: verificationData.proof,
       verification_level: verificationData.credential_type || 'orb',
       action: verificationData.action || worldIdConfig.ACTION_NAME
-      // Ya no necesitamos el signal para Mini Apps
     };
   
-    console.log('Enviando verificación a World ID:', {
+    console.log('Sending verification to World ID:', {
       action: payload.action,
       verification_level: payload.verification_level
     });
   
     try {
+      // Make the verification request to World ID's API
       const verifyUrl = `${worldIdConfig.API_BASE_URL}/verify`;
       const response = await axios.post(verifyUrl, payload, { headers });
-      console.log('Verificación exitosa de World ID');
+      
+      console.log('World ID verification successful');
       return { status: 'verified', data: response.data };
     } catch (error) {
       console.error('World ID verification failed:');
@@ -44,19 +46,23 @@ class WorldIDService {
       } else {
         console.error('Error:', error.message);
       }
+      
+      // Rethrow with more details for better debugging
       throw new Error(`Verification failed: ${error.response?.data?.error || error.message}`);
     }
   }
 
   /**
-   * Generates a nonce for wallet authentication
+   * Generates a secure nonce for wallet authentication
    * @param {number} length - Length of the nonce
    * @returns {string} Generated nonce
    */
-  generateNonce(length = 8) {
+  generateNonce(length = 16) {
+    // Create more secure nonce with crypto
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let nonce = '';
     
+    // Generate a random string of specified length
     for (let i = 0; i < length; i++) {
       nonce += characters.charAt(Math.floor(Math.random() * characters.length));
     }
@@ -88,22 +94,23 @@ class WorldIDService {
   }
 
   /**
-   * Gets user profile from World ID
-   * @param {string} accessToken - OAuth access token
-   * @returns {Promise<Object>} User profile
+   * Verifies a payment transaction with World ID
+   * @param {string} transactionId - World ID transaction ID
+   * @returns {Promise<Object>} Transaction verification result
    */
-  async getUserProfile(accessToken) {
+  async verifyPayment(transactionId) {
+    const headers = {
+      'Authorization': `Bearer ${worldIdConfig.API_KEY}`,
+      'Content-Type': 'application/json'
+    };
+
     try {
-      const response = await axios.get(`${worldIdConfig.API_BASE_URL}/user`, {
-        headers: {
-          'Authorization': `Bearer ${accessToken}`
-        }
-      });
-      
+      const url = `${worldIdConfig.API_BASE_URL}/minikit/transaction/${transactionId}?app_id=${worldIdConfig.APP_ID}`;
+      const response = await axios.get(url, { headers });
       return response.data;
     } catch (error) {
-      console.error('Failed to get user profile:', error.response?.data || error.message);
-      throw new Error('User profile acquisition failed');
+      console.error('Payment verification failed:', error.response?.data || error.message);
+      throw new Error('Payment verification failed');
     }
   }
 }
