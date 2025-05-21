@@ -1,0 +1,2003 @@
+[
+    {
+      "title": "Diseñador UX/UI para aplicación móvil",
+      "company": "CreativeTech",
+      "description": "Buscamos un diseñador UX/UI talentoso para mejorar la experiencia de usuario de nuestra aplicación móvil. El candidato ideal debe tener experiencia en diseño centrado en el usuario y conocimientos de herramientas como Figma y Adobe XD.",
+      "requirements": [
+        "3+ años de experiencia en diseño UX/UI",
+        "Experiencia con Figma y Adobe XD",
+        "Conocimiento de principios de diseño responsive",
+        "Portfolio con ejemplos de diseños previos",
+        "Capacidad para trabajar en equipo"
+      ],
+      "salary": {
+        "min": 2500,
+        "max": 3500,
+        "currency": "USD"
+      },
+      "location": "Barcelona",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Diseño",
+      "applicationUrl": "https://creativetech.com/careers/ux-designer",
+      "contactEmail": "jobs@creativetech.com"
+    },
+    {
+      "title": "Diseñador Gráfico para marca de moda",
+      "company": "FashionStyle",
+      "description": "Estamos buscando un diseñador gráfico creativo para desarrollar material visual para nuestra marca de moda, incluyendo redes sociales, web y material impreso.",
+      "requirements": [
+        "Experiencia con Adobe Creative Suite",
+        "Portfolio que demuestre creatividad",
+        "Conocimiento de tendencias en diseño",
+        "Experiencia en diseño para redes sociales",
+        "Capacidad para trabajar con plazos ajustados"
+      ],
+      "salary": {
+        "min": 1800,
+        "max": 2500,
+        "currency": "USD"
+      },
+      "location": "Lima",
+      "remote": true,
+      "type": "FREELANCE",
+      "category": "Diseño",
+      "applicationUrl": "https://fashionstyle.com/jobs",
+      "contactEmail": "design@fashionstyle.com"
+    },
+    {
+      "title": "Ilustrador para libros infantiles",
+      "company": "KidsPublishing",
+      "description": "Buscamos un ilustrador con estilo único y capacidad para crear personajes memorables para nuestra colección de libros infantiles. Se requiere experiencia en ilustración digital y tradicional.",
+      "requirements": [
+        "Graduado en Bellas Artes o Diseño",
+        "Portfolio con ejemplos de ilustración infantil",
+        "Dominio de técnicas digitales y tradicionales",
+        "Capacidad narrativa visual",
+        "Experiencia previa en libros publicados (valorable)"
+      ],
+      "salary": {
+        "min": 2000,
+        "max": 2800,
+        "currency": "USD"
+      },
+      "location": "Ciudad de México",
+      "remote": true,
+      "type": "CONTRACT",
+      "category": "Diseño",
+      "applicationUrl": "https://kidspublishing.com/careers",
+      "contactEmail": "illustration@kidspublishing.com"
+    },
+    {
+      "title": "Diseñador de interfaces de usuario para videojuegos",
+      "company": "GameStudio",
+      "description": "Estamos buscando un diseñador de UI para crear interfaces intuitivas y atractivas para nuestros videojuegos. Necesitamos alguien que entienda la experiencia de jugador y pueda implementar soluciones visuales efectivas.",
+      "requirements": [
+        "Experiencia en diseño UI para videojuegos",
+        "Conocimiento de Unity o Unreal Engine",
+        "Habilidad para diseñar elementos de HUD y menús",
+        "Comprensión de la experiencia de usuario en juegos",
+        "Portfolio con ejemplos de UI en videojuegos"
+      ],
+      "salary": {
+        "min": 2200,
+        "max": 3200,
+        "currency": "USD"
+      },
+      "location": "Madrid",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Diseño",
+      "applicationUrl": "https://gamestudio.com/jobs",
+      "contactEmail": "ui@gamestudio.com"
+    },
+    {
+      "title": "Diseñador Web creativo",
+      "company": "WebCrafters",
+      "description": "Buscamos un diseñador web que pueda crear sitios modernos, responsivos y atractivos. Valoramos la creatividad, el conocimiento técnico y la pasión por las últimas tendencias en diseño web.",
+      "requirements": [
+        "3+ años de experiencia en diseño web",
+        "Dominio de HTML, CSS y conocimientos básicos de JavaScript",
+        "Experiencia con WordPress y otros CMS",
+        "Conocimiento de principios UX/UI",
+        "Portfolio con proyectos web destacados"
+      ],
+      "salary": {
+        "min": 1900,
+        "max": 2700,
+        "currency": "USD"
+      },
+      "location": "Bogotá",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Diseño",
+      "applicationUrl": "https://webcrafters.co/join-us",
+      "contactEmail": "careers@webcrafters.co"
+    },
+    {
+      "title": "Diseñador de logotipos y branding",
+      "company": "BrandMakers",
+      "description": "Necesitamos un diseñador especializado en identidad corporativa para crear logotipos únicos y sistemas de branding completos para nuestros clientes. Buscamos alguien con ojo para el detalle y capacidad de conceptualización.",
+      "requirements": [
+        "4+ años en diseño de identidad visual",
+        "Portafolio sólido de logotipos y sistemas de marca",
+        "Dominio de Adobe Illustrator",
+        "Conocimiento de teoría del color y tipografía",
+        "Capacidad para presentar y defender conceptos"
+      ],
+      "salary": {
+        "min": 2100,
+        "max": 3000,
+        "currency": "USD"
+      },
+      "location": "Buenos Aires",
+      "remote": true,
+      "type": "FREELANCE",
+      "category": "Diseño",
+      "applicationUrl": "https://brandmakers.com/careers",
+      "contactEmail": "talent@brandmakers.com"
+    },
+    {
+      "title": "Diseñador de productos digitales",
+      "company": "InnovateLab",
+      "description": "Buscamos un diseñador de productos para definir la experiencia de usuario en nuestras aplicaciones SaaS. El candidato trabajará en estrecha colaboración con el equipo de desarrollo y stakeholders.",
+      "requirements": [
+        "Experiencia en diseño de productos digitales",
+        "Conocimiento de metodologías de diseño centrado en usuario",
+        "Capacidad para realizar investigación de usuarios",
+        "Experiencia con herramientas de prototipado",
+        "Conocimiento básico de desarrollo front-end (valorable)"
+      ],
+      "salary": {
+        "min": 2600,
+        "max": 3800,
+        "currency": "USD"
+      },
+      "location": "Santiago",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Diseño",
+      "applicationUrl": "https://innovatelab.com/join",
+      "contactEmail": "design@innovatelab.com"
+    },
+    {
+      "title": "Diseñador de motion graphics",
+      "company": "AnimateStudio",
+      "description": "Estamos buscando un diseñador de motion graphics para crear animaciones para publicidad, redes sociales y contenido web. Necesitamos alguien creativo que pueda transmitir mensajes a través del movimiento.",
+      "requirements": [
+        "Experiencia en After Effects y Premiere Pro",
+        "Conocimiento de principios de animación",
+        "Portfolio con ejemplos de motion graphics",
+        "Capacidad para trabajar con guiones y storyboards",
+        "Conocimiento de Cinema 4D (valorable)"
+      ],
+      "salary": {
+        "min": 2000,
+        "max": 3000,
+        "currency": "USD"
+      },
+      "location": "Medellín",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Diseño",
+      "applicationUrl": "https://animatestudio.co/jobs",
+      "contactEmail": "motion@animatestudio.co"
+    },
+    {
+      "title": "Diseñador editorial",
+      "company": "PublishPro",
+      "description": "Buscamos un diseñador editorial para maquetar libros, revistas y publicaciones digitales. El candidato debe tener experiencia en composición tipográfica y diseño de páginas.",
+      "requirements": [
+        "Experiencia en diseño editorial",
+        "Dominio de InDesign",
+        "Conocimiento de tipografía y maquetación",
+        "Experiencia en preparación de archivos para imprenta",
+        "Capacidad para diseñar publicaciones digitales"
+      ],
+      "salary": {
+        "min": 1800,
+        "max": 2400,
+        "currency": "USD"
+      },
+      "location": "Montevideo",
+      "remote": true,
+      "type": "PART_TIME",
+      "category": "Diseño",
+      "applicationUrl": "https://publishpro.com/careers",
+      "contactEmail": "editorial@publishpro.com"
+    },
+    {
+      "title": "Diseñador 3D para arquitectura",
+      "company": "ArchiViz",
+      "description": "Necesitamos un diseñador 3D especializado en visualizaciones arquitectónicas para crear representaciones fotorrealistas de proyectos inmobiliarios y de interiorismo.",
+      "requirements": [
+        "Experiencia con 3ds Max, SketchUp o Blender",
+        "Dominio de V-Ray o Corona Renderer",
+        "Conocimiento de composición visual y fotografía",
+        "Portfolio con ejemplos de visualizaciones 3D",
+        "Conocimiento básico de arquitectura o interiorismo"
+      ],
+      "salary": {
+        "min": 2200,
+        "max": 3300,
+        "currency": "USD"
+      },
+      "location": "Ciudad de Panamá",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Diseño",
+      "applicationUrl": "https://archiviz.com/work-with-us",
+      "contactEmail": "3d@archiviz.com"
+    },
+    {
+      "title": "Traductor inglés-español para documentación técnica",
+      "company": "TranslateNow",
+      "description": "Necesitamos un traductor especializado en traducción técnica de inglés a español para documentación de software y manuales de usuario. Se valorará conocimiento en terminología tecnológica.",
+      "requirements": [
+        "Título en traducción o filología",
+        "Nivel nativo en español y C2 en inglés",
+        "Experiencia en traducción técnica",
+        "Conocimiento de terminología informática",
+        "Disponibilidad inmediata"
+      ],
+      "salary": {
+        "min": 1800,
+        "max": 2200,
+        "currency": "USD"
+      },
+      "location": "Ciudad de México",
+      "remote": true,
+      "type": "CONTRACT",
+      "category": "Traducción",
+      "applicationUrl": "https://translatenow.com/careers",
+      "contactEmail": "recruitment@translatenow.com"
+    },
+    {
+      "title": "Traductor para localización de videojuegos",
+      "company": "GameWorld",
+      "description": "Buscamos un traductor para la localización de nuestros videojuegos del inglés al español. El candidato ideal debe tener pasión por los videojuegos y experiencia en localización.",
+      "requirements": [
+        "Experiencia en localización de videojuegos o software",
+        "Conocimiento profundo de la cultura gamer",
+        "Capacidad para mantener el tono y contexto en las traducciones",
+        "Disponibilidad para trabajar por proyectos",
+        "Familiaridad con herramientas de traducción asistida"
+      ],
+      "salary": {
+        "min": 2000,
+        "max": 2800,
+        "currency": "USD"
+      },
+      "location": "Ciudad de México",
+      "remote": true,
+      "type": "CONTRACT",
+      "category": "Traducción",
+      "applicationUrl": "https://gameworld.com/careers/localization",
+      "contactEmail": "localization@gameworld.com"
+    },
+    {
+      "title": "Traductor jurídico inglés-español",
+      "company": "LegalTrans",
+      "description": "Buscamos un traductor especializado en textos legales para traducir contratos, documentos judiciales y legislación del inglés al español. Se requiere conocimiento profundo de terminología jurídica.",
+      "requirements": [
+        "Título en traducción o derecho",
+        "Especialización en traducción jurídica",
+        "Experiencia mínima de 3 años en el sector",
+        "Conocimiento de sistemas legales anglosajones e hispanos",
+        "Atención meticulosa al detalle"
+      ],
+      "salary": {
+        "min": 2200,
+        "max": 3000,
+        "currency": "USD"
+      },
+      "location": "Madrid",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Traducción",
+      "applicationUrl": "https://legaltrans.com/jobs",
+      "contactEmail": "legal@legaltrans.com"
+    },
+    {
+      "title": "Traductor médico francés-español",
+      "company": "MedTranslate",
+      "description": "Necesitamos un traductor con formación médica para traducir documentación clínica, prospectos farmacéuticos y artículos científicos del francés al español.",
+      "requirements": [
+        "Formación en ciencias de la salud o traducción médica",
+        "Nivel nativo en español y C1/C2 en francés",
+        "Experiencia en traducción de textos médicos",
+        "Conocimiento de terminología sanitaria y farmacéutica",
+        "Capacidad para cumplir plazos estrictos"
+      ],
+      "salary": {
+        "min": 2100,
+        "max": 2900,
+        "currency": "USD"
+      },
+      "location": "Barcelona",
+      "remote": true,
+      "type": "PART_TIME",
+      "category": "Traducción",
+      "applicationUrl": "https://medtranslate.com/careers",
+      "contactEmail": "jobs@medtranslate.com"
+    },
+    {
+      "title": "Traductor e intérprete inglés-portugués",
+      "company": "Linguaconnect",
+      "description": "Buscamos un profesional que pueda realizar tanto traducciones escritas como interpretación simultánea para conferencias y reuniones de negocios entre inglés y portugués.",
+      "requirements": [
+        "Certificación en interpretación",
+        "Experiencia en interpretación simultánea",
+        "Nivel nativo en portugués y C2 en inglés",
+        "Disponibilidad para viajar ocasionalmente",
+        "Conocimiento de terminología empresarial"
+      ],
+      "salary": {
+        "min": 2500,
+        "max": 3500,
+        "currency": "USD"
+      },
+      "location": "São Paulo",
+      "remote": false,
+      "type": "FULL_TIME",
+      "category": "Traducción",
+      "applicationUrl": "https://linguaconnect.com/careers",
+      "contactEmail": "hr@linguaconnect.com"
+    },
+    {
+      "title": "Traductor audiovisual para subtitulado",
+      "company": "SubScreen",
+      "description": "Estamos buscando un traductor para subtitular series y películas del inglés al español. El candidato debe entender los retos específicos del subtitulado y adaptación cultural.",
+      "requirements": [
+        "Experiencia en traducción audiovisual",
+        "Conocimiento de software de subtitulado",
+        "Comprensión de restricciones de espacio y tiempo",
+        "Sensibilidad cultural y lingüística",
+        "Capacidad para trabajar con plazos ajustados"
+      ],
+      "salary": {
+        "min": 1800,
+        "max": 2400,
+        "currency": "USD"
+      },
+      "location": "Buenos Aires",
+      "remote": true,
+      "type": "FREELANCE",
+      "category": "Traducción",
+      "applicationUrl": "https://subscreen.com/join",
+      "contactEmail": "subtitles@subscreen.com"
+    },
+    {
+      "title": "Traductor técnico alemán-español",
+      "company": "TechTranslation",
+      "description": "Buscamos un traductor para textos técnicos, manuales de maquinaria y documentación industrial del alemán al español. Se valorará formación en ingeniería.",
+      "requirements": [
+        "Nivel C2 en alemán y nativo en español",
+        "Experiencia en traducción técnica",
+        "Conocimiento de terminología industrial",
+        "Formación técnica o ingeniería (valorable)",
+        "Familiaridad con CAT tools"
+      ],
+      "salary": {
+        "min": 2300,
+        "max": 3100,
+        "currency": "USD"
+      },
+      "location": "Múnich",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Traducción",
+      "applicationUrl": "https://techtranslation.de/careers",
+      "contactEmail": "jobs@techtranslation.de"
+    },
+    {
+      "title": "Traductor literario inglés-español",
+      "company": "LitTranslate",
+      "description": "Buscamos un traductor con sensibilidad literaria para traducir novelas y cuentos del inglés al español. El candidato debe ser capaz de capturar el estilo y voz del autor original.",
+      "requirements": [
+        "Experiencia en traducción literaria",
+        "Portfolio con ejemplos de traducciones publicadas",
+        "Licenciatura en literatura o traducción",
+        "Habilidad para preservar el estilo del autor",
+        "Conocimiento del mercado editorial"
+      ],
+      "salary": {
+        "min": 1900,
+        "max": 2600,
+        "currency": "USD"
+      },
+      "location": "Ciudad de México",
+      "remote": true,
+      "type": "FREELANCE",
+      "category": "Traducción",
+      "applicationUrl": "https://littranslate.com/opportunities",
+      "contactEmail": "books@littranslate.com"
+    },
+    {
+      "title": "Traductor y revisor italiano-español",
+      "company": "QualityTrans",
+      "description": "Necesitamos un traductor con experiencia en revisión para garantizar la calidad de traducciones del italiano al español en diversos ámbitos: turismo, gastronomía y moda.",
+      "requirements": [
+        "Nivel nativo en español y C1/C2 en italiano",
+        "Experiencia en traducción y revisión",
+        "Conocimiento de cultura italiana",
+        "Habilidad para mejorar textos manteniendo fidelidad",
+        "Excelente dominio de la gramática española"
+      ],
+      "salary": {
+        "min": 1800,
+        "max": 2500,
+        "currency": "USD"
+      },
+      "location": "Roma",
+      "remote": true,
+      "type": "PART_TIME",
+      "category": "Traducción",
+      "applicationUrl": "https://qualitytrans.it/jobs",
+      "contactEmail": "careers@qualitytrans.it"
+    },
+    {
+      "title": "Traductor especializado en marketing digital",
+      "company": "MarketLingo",
+      "description": "Buscamos un traductor para adaptar campañas de marketing, contenido web y anuncios del inglés al español latinoamericano, manteniendo el impacto persuasivo de los textos originales.",
+      "requirements": [
+        "Experiencia en traducción publicitaria",
+        "Conocimiento de marketing digital",
+        "Creatividad y capacidad de adaptación cultural",
+        "Comprensión de SEO y copywriting",
+        "Portfolio con ejemplos de campañas traducidas"
+      ],
+      "salary": {
+        "min": 2000,
+        "max": 2800,
+        "currency": "USD"
+      },
+      "location": "Bogotá",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Traducción",
+      "applicationUrl": "https://marketlingo.com/careers",
+      "contactEmail": "talent@marketlingo.com"
+    },
+    {
+      "title": "Desarrollador Full Stack Node.js/React",
+      "company": "TechSolutions",
+      "description": "Buscamos un desarrollador Full Stack con experiencia en Node.js y React para unirse a nuestro equipo. El candidato trabajará en el desarrollo de aplicaciones web escalables y de alto rendimiento.",
+      "requirements": [
+        "4+ años de experiencia con JavaScript/TypeScript",
+        "Experiencia sólida con Node.js y Express",
+        "Experiencia con React y Redux",
+        "Conocimientos de MongoDB y SQL",
+        "Experiencia con sistemas de control de versiones Git"
+      ],
+      "salary": {
+        "min": 3500,
+        "max": 5000,
+        "currency": "USD"
+      },
+      "location": "Madrid",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Desarrollo",
+      "applicationUrl": "https://techsolutions.com/jobs/fullstack",
+      "contactEmail": "tech@techsolutions.com"
+    },
+    {
+      "title": "Desarrollador de aplicaciones móviles React Native",
+      "company": "AppFactory",
+      "description": "Necesitamos un desarrollador con experiencia en React Native para crear aplicaciones móviles multiplataforma. El candidato trabajará en proyectos desde cero hasta su publicación en tiendas.",
+      "requirements": [
+        "3+ años de experiencia con React Native",
+        "Conocimiento de JavaScript/TypeScript",
+        "Experiencia publicando apps en App Store y Google Play",
+        "Comprensión de patrones de diseño móvil",
+        "Capacidad para trabajar con APIs RESTful"
+      ],
+      "salary": {
+        "min": 3000,
+        "max": 4500,
+        "currency": "USD"
+      },
+      "location": "Quito",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Desarrollo",
+      "applicationUrl": "https://appfactory.com/careers/mobile-dev",
+      "contactEmail": "jobs@appfactory.com"
+    },
+    {
+      "title": "Ingeniero de Backend Python/Django",
+      "company": "DataFlow",
+      "description": "Buscamos un ingeniero de backend para desarrollar y mantener servicios API robustos utilizando Python y Django. El candidato trabajará en la arquitectura y escalabilidad de nuestras plataformas.",
+      "requirements": [
+        "3+ años de experiencia con Python",
+        "Conocimiento profundo de Django y Django REST Framework",
+        "Experiencia en diseño de bases de datos",
+        "Familiaridad con AWS o GCP",
+        "Conocimiento de contenedores y microservicios"
+      ],
+      "salary": {
+        "min": 3200,
+        "max": 4800,
+        "currency": "USD"
+      },
+      "location": "Bogotá",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Desarrollo",
+      "applicationUrl": "https://dataflow.io/careers",
+      "contactEmail": "hiring@dataflow.io"
+    },
+    {
+      "title": "Desarrollador Frontend Angular",
+      "company": "InteractiveUI",
+      "description": "Estamos buscando un desarrollador frontend con experiencia en Angular para crear interfaces de usuario modernas, responsivas y con alto rendimiento para aplicaciones empresariales.",
+      "requirements": [
+        "3+ años de experiencia con Angular (2+)",
+        "Sólidos conocimientos de TypeScript",
+        "Experiencia con RxJS y gestión de estado",
+        "Conocimientos de HTML5, CSS3 y SASS",
+        "Comprensión de principios de diseño UI/UX"
+      ],
+      "salary": {
+        "min": 2800,
+        "max": 4200,
+        "currency": "USD"
+      },
+      "location": "Buenos Aires",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Desarrollo",
+      "applicationUrl": "https://interactiveui.com/jobs",
+      "contactEmail": "talent@interactiveui.com"
+    },
+    {
+      "title": "Desarrollador de Blockchain / Smart Contracts",
+      "company": "ChainInnovate",
+      "description": "Buscamos un desarrollador con experiencia en tecnología blockchain para diseñar e implementar contratos inteligentes y dApps. Trabajarás con Ethereum, Solidity y Web3.",
+      "requirements": [
+        "Experiencia con Solidity y desarrollo de smart contracts",
+        "Conocimiento de ecosistema Ethereum y EVM",
+        "Familiaridad con Web3.js o ethers.js",
+        "Comprensión de criptografía y seguridad blockchain",
+        "Experiencia con frameworks de testing para smart contracts"
+      ],
+      "salary": {
+        "min": 4000,
+        "max": 6000,
+        "currency": "USD"
+      },
+      "location": "Lisboa",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Desarrollo",
+      "applicationUrl": "https://chaininnovate.io/careers",
+      "contactEmail": "blockchain@chaininnovate.io"
+    },
+    {
+      "title": "Desarrollador DevOps",
+      "company": "CloudOps",
+      "description": "Necesitamos un ingeniero DevOps para automatizar procesos de CI/CD, gestionar infraestructura como código y optimizar entornos de nube. Trabajarás con Kubernetes, Docker y herramientas de automatización.",
+      "requirements": [
+        "Experiencia con Kubernetes y Docker",
+        "Conocimiento de AWS, Azure o GCP",
+        "Experiencia con Terraform o CloudFormation",
+        "Familiaridad con CI/CD pipelines (Jenkins, GitLab CI)",
+        "Conocimientos de scripting (Bash, Python)"
+      ],
+      "salary": {
+        "min": 3800,
+        "max": 5500,
+        "currency": "USD"
+      },
+      "location": "Santiago",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Desarrollo",
+      "applicationUrl": "https://cloudops.com/join-us",
+      "contactEmail": "devops@cloudops.com"
+    },
+    {
+      "title": "Desarrollador de Videojuegos Unity",
+      "company": "GameCraft",
+      "description": "Buscamos un desarrollador con experiencia en Unity para crear juegos móviles y para PC. El candidato trabajará en mecánicas de juego, optimización y sistemas de jugabilidad.",
+      "requirements": [
+        "2+ años de experiencia con Unity",
+        "Dominio de C#",
+        "Conocimiento de física y matemáticas para videojuegos",
+        "Experiencia en optimización de rendimiento",
+        "Portfolio con ejemplos de juegos desarrollados"
+      ],
+      "salary": {
+        "min": 2500,
+        "max": 3800,
+        "currency": "USD"
+      },
+      "location": "Ciudad de México",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Desarrollo",
+      "applicationUrl": "https://gamecraft.mx/jobs",
+      "contactEmail": "jobs@gamecraft.mx"
+    },
+    {
+      "title": "Desarrollador iOS Swift",
+      "company": "AppMakers",
+      "description": "Estamos buscando un desarrollador iOS para crear aplicaciones nativas de alta calidad. El candidato debe tener experiencia con Swift, UIKit y las últimas APIs de Apple.",
+      "requirements": [
+        "3+ años desarrollando apps iOS nativas",
+        "Dominio de Swift y conocimiento de SwiftUI",
+        "Experiencia con frameworks de Apple (CoreData, Core Animation)",
+        "Conocimiento de patrones de diseño (MVC, MVVM)",
+        "Experiencia publicando aplicaciones en App Store"
+      ],
+      "salary": {
+        "min": 3200,
+        "max": 4800,
+        "currency": "USD"
+      },
+      "location": "Barcelona",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Desarrollo",
+      "applicationUrl": "https://appmakers.dev/jobs",
+      "contactEmail": "ios@appmakers.dev"
+    },
+    {
+      "title": "Desarrollador Backend Java/Spring",
+      "company": "EnterpriseTech",
+      "description": "Buscamos un desarrollador backend con experiencia en Java y Spring Boot para crear y mantener microservicios. Trabajarás en sistemas escalables de alta disponibilidad.",
+      "requirements": [
+        "4+ años de experiencia con Java",
+        "Conocimiento profundo de Spring Framework y Spring Boot",
+        "Experiencia con bases de datos relacionales y NoSQL",
+        "Familiaridad con arquitecturas de microservicios",
+        "Conocimiento de JPA/Hibernate"
+      ],
+      "salary": {
+        "min": 3500,
+        "max": 5200,
+        "currency": "USD"
+      },
+      "location": "Lima",
+      "remote": true,
+      "type": "FULL_TIME",
+      "category": "Desarrollo",
+      "applicationUrl": "https://enterprisetech.com/careers",
+      "contactEmail": "java@enterprisetech.com"
+    },
+    {
+          "title": "Diseñador UX/UI para aplicación móvil",
+          "company": "CreativeTech",
+          "description": "Buscamos un diseñador UX/UI talentoso para mejorar la experiencia de usuario de nuestra aplicación móvil. El candidato ideal debe tener experiencia en diseño centrado en el usuario y conocimientos de herramientas como Figma y Adobe XD.",
+          "requirements": [
+            "3+ años de experiencia en diseño UX/UI",
+            "Experiencia con Figma y Adobe XD",
+            "Conocimiento de principios de diseño responsive",
+            "Portfolio con ejemplos de diseños previos",
+            "Capacidad para trabajar en equipo"
+          ],
+          "salary": {
+            "min": 2500,
+            "max": 3500,
+            "currency": "USD"
+          },
+          "location": "Barcelona",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Diseño",
+          "applicationUrl": "https://creativetech.com/careers/ux-designer",
+          "contactEmail": "jobs@creativetech.com"
+        },
+        {
+          "title": "Diseñador Gráfico para marca de moda",
+          "company": "FashionStyle",
+          "description": "Estamos buscando un diseñador gráfico creativo para desarrollar material visual para nuestra marca de moda, incluyendo redes sociales, web y material impreso.",
+          "requirements": [
+            "Experiencia con Adobe Creative Suite",
+            "Portfolio que demuestre creatividad",
+            "Conocimiento de tendencias en diseño",
+            "Experiencia en diseño para redes sociales",
+            "Capacidad para trabajar con plazos ajustados"
+          ],
+          "salary": {
+            "min": 1800,
+            "max": 2500,
+            "currency": "USD"
+          },
+          "location": "Lima",
+          "remote": true,
+          "type": "FREELANCE",
+          "category": "Diseño",
+          "applicationUrl": "https://fashionstyle.com/jobs",
+          "contactEmail": "design@fashionstyle.com"
+        },
+        {
+          "title": "Ilustrador para libros infantiles",
+          "company": "KidsPublishing",
+          "description": "Buscamos un ilustrador con estilo único y capacidad para crear personajes memorables para nuestra colección de libros infantiles. Se requiere experiencia en ilustración digital y tradicional.",
+          "requirements": [
+            "Graduado en Bellas Artes o Diseño",
+            "Portfolio con ejemplos de ilustración infantil",
+            "Dominio de técnicas digitales y tradicionales",
+            "Capacidad narrativa visual",
+            "Experiencia previa en libros publicados (valorable)"
+          ],
+          "salary": {
+            "min": 2000,
+            "max": 2800,
+            "currency": "USD"
+          },
+          "location": "Ciudad de México",
+          "remote": true,
+          "type": "CONTRACT",
+          "category": "Diseño",
+          "applicationUrl": "https://kidspublishing.com/careers",
+          "contactEmail": "illustration@kidspublishing.com"
+        },
+        {
+          "title": "Diseñador de interfaces de usuario para videojuegos",
+          "company": "GameStudio",
+          "description": "Estamos buscando un diseñador de UI para crear interfaces intuitivas y atractivas para nuestros videojuegos. Necesitamos alguien que entienda la experiencia de jugador y pueda implementar soluciones visuales efectivas.",
+          "requirements": [
+            "Experiencia en diseño UI para videojuegos",
+            "Conocimiento de Unity o Unreal Engine",
+            "Habilidad para diseñar elementos de HUD y menús",
+            "Comprensión de la experiencia de usuario en juegos",
+            "Portfolio con ejemplos de UI en videojuegos"
+          ],
+          "salary": {
+            "min": 2200,
+            "max": 3200,
+            "currency": "USD"
+          },
+          "location": "Madrid",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Diseño",
+          "applicationUrl": "https://gamestudio.com/jobs",
+          "contactEmail": "ui@gamestudio.com"
+        },
+        {
+          "title": "Diseñador Web creativo",
+          "company": "WebCrafters",
+          "description": "Buscamos un diseñador web que pueda crear sitios modernos, responsivos y atractivos. Valoramos la creatividad, el conocimiento técnico y la pasión por las últimas tendencias en diseño web.",
+          "requirements": [
+            "3+ años de experiencia en diseño web",
+            "Dominio de HTML, CSS y conocimientos básicos de JavaScript",
+            "Experiencia con WordPress y otros CMS",
+            "Conocimiento de principios UX/UI",
+            "Portfolio con proyectos web destacados"
+          ],
+          "salary": {
+            "min": 1900,
+            "max": 2700,
+            "currency": "USD"
+          },
+          "location": "Bogotá",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Diseño",
+          "applicationUrl": "https://webcrafters.co/join-us",
+          "contactEmail": "careers@webcrafters.co"
+        },
+        {
+          "title": "Diseñador de logotipos y branding",
+          "company": "BrandMakers",
+          "description": "Necesitamos un diseñador especializado en identidad corporativa para crear logotipos únicos y sistemas de branding completos para nuestros clientes. Buscamos alguien con ojo para el detalle y capacidad de conceptualización.",
+          "requirements": [
+            "4+ años en diseño de identidad visual",
+            "Portafolio sólido de logotipos y sistemas de marca",
+            "Dominio de Adobe Illustrator",
+            "Conocimiento de teoría del color y tipografía",
+            "Capacidad para presentar y defender conceptos"
+          ],
+          "salary": {
+            "min": 2100,
+            "max": 3000,
+            "currency": "USD"
+          },
+          "location": "Buenos Aires",
+          "remote": true,
+          "type": "FREELANCE",
+          "category": "Diseño",
+          "applicationUrl": "https://brandmakers.com/careers",
+          "contactEmail": "talent@brandmakers.com"
+        },
+        {
+          "title": "Diseñador de productos digitales",
+          "company": "InnovateLab",
+          "description": "Buscamos un diseñador de productos para definir la experiencia de usuario en nuestras aplicaciones SaaS. El candidato trabajará en estrecha colaboración con el equipo de desarrollo y stakeholders.",
+          "requirements": [
+            "Experiencia en diseño de productos digitales",
+            "Conocimiento de metodologías de diseño centrado en usuario",
+            "Capacidad para realizar investigación de usuarios",
+            "Experiencia con herramientas de prototipado",
+            "Conocimiento básico de desarrollo front-end (valorable)"
+          ],
+          "salary": {
+            "min": 2600,
+            "max": 3800,
+            "currency": "USD"
+          },
+          "location": "Santiago",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Diseño",
+          "applicationUrl": "https://innovatelab.com/join",
+          "contactEmail": "design@innovatelab.com"
+        },
+        {
+          "title": "Diseñador de motion graphics",
+          "company": "AnimateStudio",
+          "description": "Estamos buscando un diseñador de motion graphics para crear animaciones para publicidad, redes sociales y contenido web. Necesitamos alguien creativo que pueda transmitir mensajes a través del movimiento.",
+          "requirements": [
+            "Experiencia en After Effects y Premiere Pro",
+            "Conocimiento de principios de animación",
+            "Portfolio con ejemplos de motion graphics",
+            "Capacidad para trabajar con guiones y storyboards",
+            "Conocimiento de Cinema 4D (valorable)"
+          ],
+          "salary": {
+            "min": 2000,
+            "max": 3000,
+            "currency": "USD"
+          },
+          "location": "Medellín",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Diseño",
+          "applicationUrl": "https://animatestudio.co/jobs",
+          "contactEmail": "motion@animatestudio.co"
+        },
+        {
+          "title": "Diseñador editorial",
+          "company": "PublishPro",
+          "description": "Buscamos un diseñador editorial para maquetar libros, revistas y publicaciones digitales. El candidato debe tener experiencia en composición tipográfica y diseño de páginas.",
+          "requirements": [
+            "Experiencia en diseño editorial",
+            "Dominio de InDesign",
+            "Conocimiento de tipografía y maquetación",
+            "Experiencia en preparación de archivos para imprenta",
+            "Capacidad para diseñar publicaciones digitales"
+          ],
+          "salary": {
+            "min": 1800,
+            "max": 2400,
+            "currency": "USD"
+          },
+          "location": "Montevideo",
+          "remote": true,
+          "type": "PART_TIME",
+          "category": "Diseño",
+          "applicationUrl": "https://publishpro.com/careers",
+          "contactEmail": "editorial@publishpro.com"
+        },
+        {
+          "title": "Diseñador 3D para arquitectura",
+          "company": "ArchiViz",
+          "description": "Necesitamos un diseñador 3D especializado en visualizaciones arquitectónicas para crear representaciones fotorrealistas de proyectos inmobiliarios y de interiorismo.",
+          "requirements": [
+            "Experiencia con 3ds Max, SketchUp o Blender",
+            "Dominio de V-Ray o Corona Renderer",
+            "Conocimiento de composición visual y fotografía",
+            "Portfolio con ejemplos de visualizaciones 3D",
+            "Conocimiento básico de arquitectura o interiorismo"
+          ],
+          "salary": {
+            "min": 2200,
+            "max": 3300,
+            "currency": "USD"
+          },
+          "location": "Ciudad de Panamá",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Diseño",
+          "applicationUrl": "https://archiviz.com/work-with-us",
+          "contactEmail": "3d@archiviz.com"
+        },
+        {
+          "title": "Traductor inglés-español para documentación técnica",
+          "company": "TranslateNow",
+          "description": "Necesitamos un traductor especializado en traducción técnica de inglés a español para documentación de software y manuales de usuario. Se valorará conocimiento en terminología tecnológica.",
+          "requirements": [
+            "Título en traducción o filología",
+            "Nivel nativo en español y C2 en inglés",
+            "Experiencia en traducción técnica",
+            "Conocimiento de terminología informática",
+            "Disponibilidad inmediata"
+          ],
+          "salary": {
+            "min": 1800,
+            "max": 2200,
+            "currency": "USD"
+          },
+          "location": "Ciudad de México",
+          "remote": true,
+          "type": "CONTRACT",
+          "category": "Traducción",
+          "applicationUrl": "https://translatenow.com/careers",
+          "contactEmail": "recruitment@translatenow.com"
+        },
+        {
+          "title": "Traductor para localización de videojuegos",
+          "company": "GameWorld",
+          "description": "Buscamos un traductor para la localización de nuestros videojuegos del inglés al español. El candidato ideal debe tener pasión por los videojuegos y experiencia en localización.",
+          "requirements": [
+            "Experiencia en localización de videojuegos o software",
+            "Conocimiento profundo de la cultura gamer",
+            "Capacidad para mantener el tono y contexto en las traducciones",
+            "Disponibilidad para trabajar por proyectos",
+            "Familiaridad con herramientas de traducción asistida"
+          ],
+          "salary": {
+            "min": 2000,
+            "max": 2800,
+            "currency": "USD"
+          },
+          "location": "Ciudad de México",
+          "remote": true,
+          "type": "CONTRACT",
+          "category": "Traducción",
+          "applicationUrl": "https://gameworld.com/careers/localization",
+          "contactEmail": "localization@gameworld.com"
+        },
+        {
+          "title": "Traductor jurídico inglés-español",
+          "company": "LegalTrans",
+          "description": "Buscamos un traductor especializado en textos legales para traducir contratos, documentos judiciales y legislación del inglés al español. Se requiere conocimiento profundo de terminología jurídica.",
+          "requirements": [
+            "Título en traducción o derecho",
+            "Especialización en traducción jurídica",
+            "Experiencia mínima de 3 años en el sector",
+            "Conocimiento de sistemas legales anglosajones e hispanos",
+            "Atención meticulosa al detalle"
+          ],
+          "salary": {
+            "min": 2200,
+            "max": 3000,
+            "currency": "USD"
+          },
+          "location": "Madrid",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Traducción",
+          "applicationUrl": "https://legaltrans.com/jobs",
+          "contactEmail": "legal@legaltrans.com"
+        },
+        {
+          "title": "Traductor médico francés-español",
+          "company": "MedTranslate",
+          "description": "Necesitamos un traductor con formación médica para traducir documentación clínica, prospectos farmacéuticos y artículos científicos del francés al español.",
+          "requirements": [
+            "Formación en ciencias de la salud o traducción médica",
+            "Nivel nativo en español y C1/C2 en francés",
+            "Experiencia en traducción de textos médicos",
+            "Conocimiento de terminología sanitaria y farmacéutica",
+            "Capacidad para cumplir plazos estrictos"
+          ],
+          "salary": {
+            "min": 2100,
+            "max": 2900,
+            "currency": "USD"
+          },
+          "location": "Barcelona",
+          "remote": true,
+          "type": "PART_TIME",
+          "category": "Traducción",
+          "applicationUrl": "https://medtranslate.com/careers",
+          "contactEmail": "jobs@medtranslate.com"
+        },
+        {
+          "title": "Traductor e intérprete inglés-portugués",
+          "company": "Linguaconnect",
+          "description": "Buscamos un profesional que pueda realizar tanto traducciones escritas como interpretación simultánea para conferencias y reuniones de negocios entre inglés y portugués.",
+          "requirements": [
+            "Certificación en interpretación",
+            "Experiencia en interpretación simultánea",
+            "Nivel nativo en portugués y C2 en inglés",
+            "Disponibilidad para viajar ocasionalmente",
+            "Conocimiento de terminología empresarial"
+          ],
+          "salary": {
+            "min": 2500,
+            "max": 3500,
+            "currency": "USD"
+          },
+          "location": "São Paulo",
+          "remote": false,
+          "type": "FULL_TIME",
+          "category": "Traducción",
+          "applicationUrl": "https://linguaconnect.com/careers",
+          "contactEmail": "hr@linguaconnect.com"
+        },
+        {
+          "title": "Traductor audiovisual para subtitulado",
+          "company": "SubScreen",
+          "description": "Estamos buscando un traductor para subtitular series y películas del inglés al español. El candidato debe entender los retos específicos del subtitulado y adaptación cultural.",
+          "requirements": [
+            "Experiencia en traducción audiovisual",
+            "Conocimiento de software de subtitulado",
+            "Comprensión de restricciones de espacio y tiempo",
+            "Sensibilidad cultural y lingüística",
+            "Capacidad para trabajar con plazos ajustados"
+          ],
+          "salary": {
+            "min": 1800,
+            "max": 2400,
+            "currency": "USD"
+          },
+          "location": "Buenos Aires",
+          "remote": true,
+          "type": "FREELANCE",
+          "category": "Traducción",
+          "applicationUrl": "https://subscreen.com/join",
+          "contactEmail": "subtitles@subscreen.com"
+        },
+        {
+          "title": "Traductor técnico alemán-español",
+          "company": "TechTranslation",
+          "description": "Buscamos un traductor para textos técnicos, manuales de maquinaria y documentación industrial del alemán al español. Se valorará formación en ingeniería.",
+          "requirements": [
+            "Nivel C2 en alemán y nativo en español",
+            "Experiencia en traducción técnica",
+            "Conocimiento de terminología industrial",
+            "Formación técnica o ingeniería (valorable)",
+            "Familiaridad con CAT tools"
+          ],
+          "salary": {
+            "min": 2300,
+            "max": 3100,
+            "currency": "USD"
+          },
+          "location": "Múnich",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Traducción",
+          "applicationUrl": "https://techtranslation.de/careers",
+          "contactEmail": "jobs@techtranslation.de"
+        },
+        {
+          "title": "Traductor literario inglés-español",
+          "company": "LitTranslate",
+          "description": "Buscamos un traductor con sensibilidad literaria para traducir novelas y cuentos del inglés al español. El candidato debe ser capaz de capturar el estilo y voz del autor original.",
+          "requirements": [
+            "Experiencia en traducción literaria",
+            "Portfolio con ejemplos de traducciones publicadas",
+            "Licenciatura en literatura o traducción",
+            "Habilidad para preservar el estilo del autor",
+            "Conocimiento del mercado editorial"
+          ],
+          "salary": {
+            "min": 1900,
+            "max": 2600,
+            "currency": "USD"
+          },
+          "location": "Ciudad de México",
+          "remote": true,
+          "type": "FREELANCE",
+          "category": "Traducción",
+          "applicationUrl": "https://littranslate.com/opportunities",
+          "contactEmail": "books@littranslate.com"
+        },
+        {
+          "title": "Traductor y revisor italiano-español",
+          "company": "QualityTrans",
+          "description": "Necesitamos un traductor con experiencia en revisión para garantizar la calidad de traducciones del italiano al español en diversos ámbitos: turismo, gastronomía y moda.",
+          "requirements": [
+            "Nivel nativo en español y C1/C2 en italiano",
+            "Experiencia en traducción y revisión",
+            "Conocimiento de cultura italiana",
+            "Habilidad para mejorar textos manteniendo fidelidad",
+            "Excelente dominio de la gramática española"
+          ],
+          "salary": {
+            "min": 1800,
+            "max": 2500,
+            "currency": "USD"
+          },
+          "location": "Roma",
+          "remote": true,
+          "type": "PART_TIME",
+          "category": "Traducción",
+          "applicationUrl": "https://qualitytrans.it/jobs",
+          "contactEmail": "careers@qualitytrans.it"
+        },
+        {
+          "title": "Traductor especializado en marketing digital",
+          "company": "MarketLingo",
+          "description": "Buscamos un traductor para adaptar campañas de marketing, contenido web y anuncios del inglés al español latinoamericano, manteniendo el impacto persuasivo de los textos originales.",
+          "requirements": [
+            "Experiencia en traducción publicitaria",
+            "Conocimiento de marketing digital",
+            "Creatividad y capacidad de adaptación cultural",
+            "Comprensión de SEO y copywriting",
+            "Portfolio con ejemplos de campañas traducidas"
+          ],
+          "salary": {
+            "min": 2000,
+            "max": 2800,
+            "currency": "USD"
+          },
+          "location": "Bogotá",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Traducción",
+          "applicationUrl": "https://marketlingo.com/careers",
+          "contactEmail": "talent@marketlingo.com"
+        },
+        {
+          "title": "Desarrollador Full Stack Node.js/React",
+          "company": "TechSolutions",
+          "description": "Buscamos un desarrollador Full Stack con experiencia en Node.js y React para unirse a nuestro equipo. El candidato trabajará en el desarrollo de aplicaciones web escalables y de alto rendimiento.",
+          "requirements": [
+            "4+ años de experiencia con JavaScript/TypeScript",
+            "Experiencia sólida con Node.js y Express",
+            "Experiencia con React y Redux",
+            "Conocimientos de MongoDB y SQL",
+            "Experiencia con sistemas de control de versiones Git"
+          ],
+          "salary": {
+            "min": 3500,
+            "max": 5000,
+            "currency": "USD"
+          },
+          "location": "Madrid",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Desarrollo",
+          "applicationUrl": "https://techsolutions.com/jobs/fullstack",
+          "contactEmail": "tech@techsolutions.com"
+        },
+        {
+          "title": "Desarrollador de aplicaciones móviles React Native",
+          "company": "AppFactory",
+          "description": "Necesitamos un desarrollador con experiencia en React Native para crear aplicaciones móviles multiplataforma. El candidato trabajará en proyectos desde cero hasta su publicación en tiendas.",
+          "requirements": [
+            "3+ años de experiencia con React Native",
+            "Conocimiento de JavaScript/TypeScript",
+            "Experiencia publicando apps en App Store y Google Play",
+            "Comprensión de patrones de diseño móvil",
+            "Capacidad para trabajar con APIs RESTful"
+          ],
+          "salary": {
+            "min": 3000,
+            "max": 4500,
+            "currency": "USD"
+          },
+          "location": "Quito",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Desarrollo",
+          "applicationUrl": "https://appfactory.com/careers/mobile-dev",
+          "contactEmail": "jobs@appfactory.com"
+        },
+        {
+          "title": "Ingeniero de Backend Python/Django",
+          "company": "DataFlow",
+          "description": "Buscamos un ingeniero de backend para desarrollar y mantener servicios API robustos utilizando Python y Django. El candidato trabajará en la arquitectura y escalabilidad de nuestras plataformas.",
+          "requirements": [
+            "3+ años de experiencia con Python",
+            "Conocimiento profundo de Django y Django REST Framework",
+            "Experiencia en diseño de bases de datos",
+            "Familiaridad con AWS o GCP",
+            "Conocimiento de contenedores y microservicios"
+          ],
+          "salary": {
+            "min": 3200,
+            "max": 4800,
+            "currency": "USD"
+          },
+          "location": "Bogotá",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Desarrollo",
+          "applicationUrl": "https://dataflow.io/careers",
+          "contactEmail": "hiring@dataflow.io"
+        },
+        {
+          "title": "Desarrollador Frontend Angular",
+          "company": "InteractiveUI",
+          "description": "Estamos buscando un desarrollador frontend con experiencia en Angular para crear interfaces de usuario modernas, responsivas y con alto rendimiento para aplicaciones empresariales.",
+          "requirements": [
+            "3+ años de experiencia con Angular (2+)",
+            "Sólidos conocimientos de TypeScript",
+            "Experiencia con RxJS y gestión de estado",
+            "Conocimientos de HTML5, CSS3 y SASS",
+            "Comprensión de principios de diseño UI/UX"
+          ],
+          "salary": {
+            "min": 2800,
+            "max": 4200,
+            "currency": "USD"
+          },
+          "location": "Buenos Aires",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Desarrollo",
+          "applicationUrl": "https://interactiveui.com/jobs",
+          "contactEmail": "talent@interactiveui.com"
+        },
+        {
+          "title": "Desarrollador de Blockchain / Smart Contracts",
+          "company": "ChainInnovate",
+          "description": "Buscamos un desarrollador con experiencia en tecnología blockchain para diseñar e implementar contratos inteligentes y dApps. Trabajarás con Ethereum, Solidity y Web3.",
+          "requirements": [
+            "Experiencia con Solidity y desarrollo de smart contracts",
+            "Conocimiento de ecosistema Ethereum y EVM",
+            "Familiaridad con Web3.js o ethers.js",
+            "Comprensión de criptografía y seguridad blockchain",
+            "Experiencia con frameworks de testing para smart contracts"
+          ],
+          "salary": {
+            "min": 4000,
+            "max": 6000,
+            "currency": "USD"
+          },
+          "location": "Lisboa",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Desarrollo",
+          "applicationUrl": "https://chaininnovate.io/careers",
+          "contactEmail": "blockchain@chaininnovate.io"
+        },
+        {
+          "title": "Desarrollador DevOps",
+          "company": "CloudOps",
+          "description": "Necesitamos un ingeniero DevOps para automatizar procesos de CI/CD, gestionar infraestructura como código y optimizar entornos de nube. Trabajarás con Kubernetes, Docker y herramientas de automatización.",
+          "requirements": [
+            "Experiencia con Kubernetes y Docker",
+            "Conocimiento de AWS, Azure o GCP",
+            "Experiencia con Terraform o CloudFormation",
+            "Familiaridad con CI/CD pipelines (Jenkins, GitLab CI)",
+            "Conocimientos de scripting (Bash, Python)"
+          ],
+          "salary": {
+            "min": 3800,
+            "max": 5500,
+            "currency": "USD"
+          },
+          "location": "Santiago",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Desarrollo",
+          "applicationUrl": "https://cloudops.com/join-us",
+          "contactEmail": "devops@cloudops.com"
+        },
+        {
+          "title": "Desarrollador de Videojuegos Unity",
+          "company": "GameCraft",
+          "description": "Buscamos un desarrollador con experiencia en Unity para crear juegos móviles y para PC. El candidato trabajará en mecánicas de juego, optimización y sistemas de jugabilidad.",
+          "requirements": [
+            "2+ años de experiencia con Unity",
+            "Dominio de C#",
+            "Conocimiento de física y matemáticas para videojuegos",
+            "Experiencia en optimización de rendimiento",
+            "Portfolio con ejemplos de juegos desarrollados"
+          ],
+          "salary": {
+            "min": 2500,
+            "max": 3800,
+            "currency": "USD"
+          },
+          "location": "Ciudad de México",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Desarrollo",
+          "applicationUrl": "https://gamecraft.mx/jobs",
+          "contactEmail": "jobs@gamecraft.mx"
+        },
+        {
+          "title": "Desarrollador iOS Swift",
+          "company": "AppMakers",
+          "description": "Estamos buscando un desarrollador iOS para crear aplicaciones nativas de alta calidad. El candidato debe tener experiencia con Swift, UIKit y las últimas APIs de Apple.",
+          "requirements": [
+            "3+ años desarrollando apps iOS nativas",
+            "Dominio de Swift y conocimiento de SwiftUI",
+            "Experiencia con frameworks de Apple (CoreData, Core Animation)",
+            "Conocimiento de patrones de diseño (MVC, MVVM)",
+            "Experiencia publicando aplicaciones en App Store"
+          ],
+          "salary": {
+            "min": 3200,
+            "max": 4800,
+            "currency": "USD"
+          },
+          "location": "Barcelona",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Desarrollo",
+          "applicationUrl": "https://appmakers.dev/jobs",
+          "contactEmail": "ios@appmakers.dev"
+        },
+        {
+          "title": "Desarrollador Backend Java/Spring",
+          "company": "EnterpriseTech",
+          "description": "Buscamos un desarrollador backend con experiencia en Java y Spring Boot para crear y mantener microservicios. Trabajarás en sistemas escalables de alta disponibilidad.",
+          "requirements": [
+            "4+ años de experiencia con Java",
+            "Conocimiento profundo de Spring Framework y Spring Boot",
+            "Experiencia con bases de datos relacionales y NoSQL",
+            "Familiaridad con arquitecturas de microservicios",
+            "Conocimiento de JPA/Hibernate"
+          ],
+          "salary": {
+            "min": 3500,
+            "max": 5200,
+            "currency": "USD"
+          },
+          "location": "Lima",
+          "remote": true,
+          "type": "FULL_TIME",
+          "category": "Desarrollo",
+          "applicationUrl": "https://enterprisetech.com/careers",
+          "contactEmail": "java@enterprisetech.com"
+        },
+    {
+              "title": "Ingeniero de Machine Learning",
+              "company": "AIInnovate",
+              "description": "Necesitamos un ingeniero de ML para desarrollar y desplegar modelos de aprendizaje automático. Trabajarás con datasets grandes, implementarás algoritmos de ML y optimizarás modelos.",
+              "requirements": [
+                "Maestría en ciencias de la computación, IA o campo relacionado",
+                "Experiencia con TensorFlow o PyTorch",
+                "Conocimiento de algoritmos de aprendizaje supervisado y no supervisado",
+                "Habilidades de programación en Python",
+                "Experiencia con procesamiento de lenguaje natural o visión por computadora"
+              ],
+              "salary": {
+                "min": 4500,
+                "max": 6500,
+                "currency": "USD"
+              },
+              "location": "Madrid",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Desarrollo",
+              "applicationUrl": "https://aiinnovate.com/careers",
+              "contactEmail": "ml-jobs@aiinnovate.com"
+            },
+            {
+              "title": "Especialista en Marketing Digital",
+              "company": "GrowthHub",
+              "description": "Estamos buscando un especialista en marketing digital para gestionar campañas en redes sociales y Google Ads. El candidato será responsable de aumentar el tráfico web y las conversiones.",
+              "requirements": [
+                "3+ años en marketing digital",
+                "Experiencia en Google Ads y Facebook Ads",
+                "Conocimientos de SEO/SEM",
+                "Experiencia en análisis de datos con Google Analytics",
+                "Capacidad para crear informes y presentar resultados"
+              ],
+              "salary": {
+                "min": 2000,
+                "max": 3000,
+                "currency": "USD"
+              },
+              "location": "Bogotá",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Marketing",
+              "applicationUrl": "https://growthhub.com/careers/digital-marketing",
+              "contactEmail": "marketing@growthhub.com"
+            },
+            {
+              "title": "Especialista en SEO",
+              "company": "RankFirst",
+              "description": "Buscamos un especialista en SEO para mejorar el posicionamiento de nuestros clientes en motores de búsqueda. El candidato desarrollará estrategias de contenido y técnicas para aumentar la visibilidad online.",
+              "requirements": [
+                "Experiencia demostrable en SEO on-page y off-page",
+                "Conocimiento de herramientas como SEMrush, Ahrefs, Google Search Console",
+                "Comprensión de algoritmos de búsqueda",
+                "Habilidad para analizar datos y elaborar reportes",
+                "Conocimientos básicos de HTML y CSS"
+              ],
+              "salary": {
+                "min": 2200,
+                "max": 3200,
+                "currency": "USD"
+              },
+              "location": "Medellín",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Marketing",
+              "applicationUrl": "https://rankfirst.com/careers",
+              "contactEmail": "seo@rankfirst.com"
+            },
+            {
+              "title": "Community Manager",
+              "company": "SocialBoost",
+              "description": "Buscamos un Community Manager para gestionar la presencia en redes sociales de nuestros clientes. El candidato creará contenido, interactuará con seguidores y analizará el rendimiento de las estrategias implementadas.",
+              "requirements": [
+                "2+ años de experiencia gestionando redes sociales",
+                "Creatividad y excelente redacción",
+                "Conocimiento de herramientas de programación y análisis",
+                "Experiencia con campañas de contenido",
+                "Capacidad para gestionar múltiples cuentas simultáneamente"
+              ],
+              "salary": {
+                "min": 1800,
+                "max": 2600,
+                "currency": "USD"
+              },
+              "location": "Ciudad de México",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Marketing",
+              "applicationUrl": "https://socialboost.mx/jobs",
+              "contactEmail": "talent@socialboost.mx"
+            },
+            {
+              "title": "Especialista en Email Marketing",
+              "company": "ConvertMail",
+              "description": "Necesitamos un especialista en email marketing para diseñar, implementar y analizar campañas de correo electrónico que maximicen la conversión. Trabajarás con segmentación, A/B testing y automatización.",
+              "requirements": [
+                "Experiencia con plataformas de email marketing (Mailchimp, SendGrid, etc.)",
+                "Conocimiento de diseño HTML para emails",
+                "Comprensión de métricas de email marketing",
+                "Habilidad para segmentar audiencias",
+                "Experiencia con flujos de automatización de emails"
+              ],
+              "salary": {
+                "min": 1900,
+                "max": 2700,
+                "currency": "USD"
+              },
+              "location": "Lima",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Marketing",
+              "applicationUrl": "https://convertmail.com/careers",
+              "contactEmail": "jobs@convertmail.com"
+            },
+            {
+              "title": "Analista de Marketing Digital",
+              "company": "DataMetrics",
+              "description": "Buscamos un analista para interpretar datos de campañas de marketing digital. El candidato trabajará con Google Analytics, herramientas de BI y plataformas publicitarias para optimizar el ROI.",
+              "requirements": [
+                "Experiencia con Google Analytics y Data Studio",
+                "Conocimiento de herramientas de análisis digital",
+                "Habilidad para interpretar KPIs de marketing",
+                "Experiencia con attribution modeling",
+                "Capacidad para crear dashboards y reportes"
+              ],
+              "salary": {
+                "min": 2200,
+                "max": 3200,
+                "currency": "USD"
+              },
+              "location": "Santiago",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Marketing",
+              "applicationUrl": "https://datametrics.io/careers",
+              "contactEmail": "analytics@datametrics.io"
+            },
+            {
+              "title": "Especialista en Marketing de Contenidos",
+              "company": "ContentLab",
+              "description": "Estamos buscando un especialista en marketing de contenidos para desarrollar y ejecutar estrategias de contenido que atraigan y conviertan a la audiencia objetivo de nuestros clientes.",
+              "requirements": [
+                "Excelente capacidad de redacción y edición",
+                "Experiencia en desarrollo de estrategias de contenido",
+                "Conocimiento de SEO aplicado a contenidos",
+                "Habilidad para gestionar calendarios editoriales",
+                "Comprensión de buyer personas y journey de compra"
+              ],
+              "salary": {
+                "min": 2000,
+                "max": 3000,
+                "currency": "USD"
+              },
+              "location": "Montevideo",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Marketing",
+              "applicationUrl": "https://contentlab.uy/join-us",
+              "contactEmail": "contenidos@contentlab.uy"
+            },
+            {
+              "title": "Brand Manager",
+              "company": "BrandForge",
+              "description": "Buscamos un Brand Manager para desarrollar y gestionar la estrategia de marca de nuestros clientes. El candidato trabajará en el posicionamiento, identidad de marca y comunicación.",
+              "requirements": [
+                "3+ años de experiencia en gestión de marcas",
+                "Conocimiento de investigación de mercado",
+                "Experiencia en desarrollo de estrategias de marca",
+                "Comprensión de psicología del consumidor",
+                "Capacidad para trabajar con equipos creativos"
+              ],
+              "salary": {
+                "min": 2800,
+                "max": 4000,
+                "currency": "USD"
+              },
+              "location": "Buenos Aires",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Marketing",
+              "applicationUrl": "https://brandforge.com/careers",
+              "contactEmail": "brand@brandforge.com"
+            },
+            {
+              "title": "Especialista en Paid Media",
+              "company": "AdScalers",
+              "description": "Necesitamos un especialista en medios pagados para gestionar campañas en Google Ads, Facebook Ads y otras plataformas. El candidato optimizará presupuestos y maximizará el retorno de inversión.",
+              "requirements": [
+                "3+ años gestionando campañas PPC",
+                "Certificaciones en Google Ads y Facebook Blueprint",
+                "Experiencia con LinkedIn Ads, Twitter Ads (valorable)",
+                "Habilidad para analizar métricas y optimizar campañas",
+                "Conocimiento de estrategias de remarketing"
+              ],
+              "salary": {
+                "min": 2500,
+                "max": 3500,
+                "currency": "USD"
+              },
+              "location": "Madrid",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Marketing",
+              "applicationUrl": "https://adscalers.com/join-us",
+              "contactEmail": "ppc@adscalers.com"
+            },
+            {
+              "title": "Growth Hacker",
+              "company": "ScaleUp",
+              "description": "Buscamos un Growth Hacker para implementar estrategias innovadoras de crecimiento. El candidato debe tener mentalidad analítica, ser creativo y combinar marketing, datos y desarrollo de producto.",
+              "requirements": [
+                "Experiencia demostrable en growth hacking",
+                "Conocimiento de análisis de datos y A/B testing",
+                "Creatividad para desarrollar estrategias no convencionales",
+                "Comprensión de embudos de conversión",
+                "Habilidades básicas de programación (valorable)"
+              ],
+              "salary": {
+                "min": 2500,
+                "max": 4000,
+                "currency": "USD"
+              },
+              "location": "Bogotá",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Marketing",
+              "applicationUrl": "https://scaleup.co/careers",
+              "contactEmail": "growth@scaleup.co"
+            },
+            {
+              "title": "Director de Marketing",
+              "company": "MarketLeaders",
+              "description": "Buscamos un Director de Marketing para liderar la estrategia general de marketing de la empresa. El candidato supervisará todos los aspectos del marketing: digital, contenidos, marca y eventos.",
+              "requirements": [
+                "5+ años de experiencia en puestos de marketing",
+                "Experiencia liderando equipos",
+                "Conocimiento integral de canales de marketing",
+                "Habilidad para desarrollar presupuestos y previsiones",
+                "Capacidad para alinear marketing con objetivos de negocio"
+              ],
+              "salary": {
+                "min": 4000,
+                "max": 6000,
+                "currency": "USD"
+              },
+              "location": "Ciudad de México",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Marketing",
+              "applicationUrl": "https://marketleaders.com/careers",
+              "contactEmail": "director@marketleaders.com"
+            },
+            {
+              "title": "Contador para empresa tecnológica",
+              "company": "FinanceTech",
+              "description": "Necesitamos un contador con experiencia en el sector tecnológico para gestionar contabilidad, impuestos y reportes financieros de nuestra empresa en crecimiento.",
+              "requirements": [
+                "Licenciatura en Contabilidad o similar",
+                "3+ años de experiencia en contabilidad",
+                "Conocimiento de legislación fiscal",
+                "Experiencia con software de contabilidad",
+                "Capacidad analítica y atención al detalle"
+              ],
+              "salary": {
+                "min": 2200,
+                "max": 2800,
+                "currency": "USD"
+              },
+              "location": "Buenos Aires",
+              "remote": false,
+              "type": "FULL_TIME",
+              "category": "Contabilidad",
+              "applicationUrl": "https://financetech.com/jobs/accountant",
+              "contactEmail": "finance@financetech.com"
+            },
+            {
+              "title": "Analista Contable para startup",
+              "company": "InnoFinance",
+              "description": "Estamos buscando un analista contable para gestionar las finanzas diarias de nuestra startup. El candidato será responsable de contabilidad, procesamiento de pagos y reportes financieros.",
+              "requirements": [
+                "Titulación en contabilidad o finanzas",
+                "2+ años de experiencia en rol similar",
+                "Conocimiento de software contable moderno",
+                "Experiencia en conciliaciones bancarias",
+                "Capacidad de trabajar de forma independiente"
+              ],
+              "salary": {
+                "min": 1800,
+                "max": 2400,
+                "currency": "USD"
+              },
+              "location": "Montevideo",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Contabilidad",
+              "applicationUrl": "https://innofinance.com/jobs",
+              "contactEmail": "accounting@innofinance.com"
+            },
+            {
+              "title": "Controller financiero",
+              "company": "CorpFinance",
+              "description": "Buscamos un Controller Financiero para supervisar las operaciones contables y financieras de la empresa. El candidato será responsable de la planificación financiera, análisis y control de gestión.",
+              "requirements": [
+                "Licenciatura en Finanzas, Contabilidad o similar",
+                "4+ años de experiencia en roles financieros",
+                "Conocimiento de normativa contable internacional",
+                "Experiencia en elaboración de presupuestos",
+                "Habilidad para análisis financiero y reportes a dirección"
+              ],
+              "salary": {
+                "min": 3000,
+                "max": 4000,
+                "currency": "USD"
+              },
+              "location": "Madrid",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Contabilidad",
+              "applicationUrl": "https://corpfinance.es/careers",
+              "contactEmail": "controller@corpfinance.es"
+            },
+            {
+              "title": "Especialista en Impuestos",
+              "company": "TaxAdvisors",
+              "description": "Necesitamos un especialista en impuestos para gestionar la planificación fiscal, declaraciones y cumplimiento normativo. El candidato trabajará con empresas de diferentes sectores y tamaños.",
+              "requirements": [
+                "Titulación en Contabilidad o Derecho",
+                "3+ años de experiencia en asesoría fiscal",
+                "Conocimiento profundo de normativa tributaria",
+                "Experiencia con fiscalidad internacional (valorable)",
+                "Habilidad para optimizar la carga fiscal legal"
+              ],
+              "salary": {
+                "min": 2500,
+                "max": 3500,
+                "currency": "USD"
+              },
+              "location": "Bogotá",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Contabilidad",
+              "applicationUrl": "https://taxadvisors.co/join-us",
+              "contactEmail": "impuestos@taxadvisors.co"
+            },
+            {
+              "title": "Contador Senior",
+              "company": "AccountGlobal",
+              "description": "Buscamos un Contador Senior para supervisar el cierre contable mensual, trimestral y anual. El candidato será responsable de estados financieros, auditorías y cumplimiento normativo.",
+              "requirements": [
+                "Licenciatura en Contabilidad",
+                "5+ años de experiencia en contabilidad",
+                "Conocimiento de NIIF/IFRS",
+                "Experiencia en procesos de auditoría",
+                "Liderazgo y capacidad para gestionar equipos"
+              ],
+              "salary": {
+                "min": 2800,
+                "max": 3800,
+                "currency": "USD"
+              },
+              "location": "Lima",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Contabilidad",
+              "applicationUrl": "https://accountglobal.com/careers",
+              "contactEmail": "senior@accountglobal.com"
+            },
+            {
+              "title": "Auditor Interno",
+              "company": "AuditPro",
+              "description": "Estamos buscando un Auditor Interno para evaluar el control interno, gestión de riesgos y cumplimiento normativo de la organización. El candidato realizará auditorías y emitirá recomendaciones.",
+              "requirements": [
+                "Titulación en Contabilidad, Finanzas o similar",
+                "3+ años de experiencia en auditoría",
+                "Certificación CIA o similar (valorable)",
+                "Conocimiento de procesos de control interno",
+                "Capacidad analítica y atención al detalle"
+              ],
+              "salary": {
+                "min": 2500,
+                "max": 3500,
+                "currency": "USD"
+              },
+              "location": "Ciudad de México",
+              "remote": false,
+              "type": "FULL_TIME",
+              "category": "Contabilidad",
+              "applicationUrl": "https://auditpro.mx/jobs",
+              "contactEmail": "auditor@auditpro.mx"
+            },
+            {
+              "title": "Contable para despacho fiscal",
+              "company": "FiscalConsult",
+              "description": "Buscamos un contable para gestionar la contabilidad de múltiples clientes en nuestro despacho fiscal. El candidato preparará declaraciones tributarias, informes financieros y asesorará a clientes.",
+              "requirements": [
+                "Titulación en Contabilidad",
+                "2+ años de experiencia en despacho contable",
+                "Conocimiento de software contable y fiscal",
+                "Experiencia con impuestos de personas físicas y jurídicas",
+                "Habilidad para comunicarse con clientes"
+              ],
+              "salary": {
+                "min": 1800,
+                "max": 2500,
+                "currency": "USD"
+              },
+              "location": "Barcelona",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Contabilidad",
+              "applicationUrl": "https://fiscalconsult.es/empleo",
+              "contactEmail": "empleo@fiscalconsult.es"
+            },
+            {
+              "title": "Analista de Costos",
+              "company": "CostEfficient",
+              "description": "Necesitamos un analista de costos para desarrollar y mantener sistemas de costos, realizar análisis de rentabilidad y proporcionar información para la toma de decisiones estratégicas.",
+              "requirements": [
+                "Licenciatura en Contabilidad o Finanzas",
+                "Experiencia en contabilidad de costos",
+                "Conocimiento de sistemas ERP",
+                "Habilidad para análisis de datos y elaboración de informes",
+                "Experiencia en modelado financiero"
+              ],
+              "salary": {
+                "min": 2200,
+                "max": 3000,
+                "currency": "USD"
+              },
+              "location": "Santiago",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Contabilidad",
+              "applicationUrl": "https://costefficient.cl/careers",
+              "contactEmail": "costos@costefficient.cl"
+            },
+            {
+              "title": "Contador de Nóminas",
+              "company": "PayrollPro",
+              "description": "Buscamos un contador especializado en nóminas para gestionar el proceso de pago a empleados, impuestos laborales y beneficios sociales. El candidato garantizará el cumplimiento de la normativa laboral.",
+              "requirements": [
+                "Titulación en Contabilidad o Recursos Humanos",
+                "2+ años de experiencia en gestión de nóminas",
+                "Conocimiento de legislación laboral",
+                "Experiencia con software de nóminas",
+                "Atención al detalle y confidencialidad"
+              ],
+              "salary": {
+                "min": 1800,
+                "max": 2600,
+                "currency": "USD"
+              },
+              "location": "Medellín",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Contabilidad",
+              "applicationUrl": "https://payrollpro.co/jobs",
+              "contactEmail": "nominas@payrollpro.co"
+            },
+            {
+              "title": "Director Financiero (CFO)",
+              "company": "StrategicFinance",
+              "description": "Estamos buscando un Director Financiero para liderar la estrategia financiera de la empresa, incluyendo planificación, operaciones contables, tesorería, control de gestión y relación con inversores.",
+              "requirements": [
+                "Maestría en Finanzas, MBA o similar",
+                "7+ años de experiencia en posiciones financieras senior",
+                "Experiencia liderando equipos financieros",
+                "Conocimiento de mercados financieros y financiación",
+                "Capacidad estratégica y visión de negocio"
+              ],
+              "salary": {
+                "min": 5000,
+                "max": 8000,
+                "currency": "USD"
+              },
+              "location": "Buenos Aires",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Contabilidad",
+              "applicationUrl": "https://strategicfinance.com/leadership",
+              "contactEmail": "cfo@strategicfinance.com"
+            },
+            {
+              "title": "Redactor de contenidos para blog tecnológico",
+              "company": "ContentLabs",
+              "description": "Buscamos un redactor creativo para nuestro blog de tecnología. El candidato debe ser capaz de investigar temas técnicos y convertirlos en contenido accesible para una audiencia general.",
+              "requirements": [
+                "Excelente redacción y gramática",
+                "Experiencia en redacción SEO",
+                "Conocimiento básico de tecnología",
+                "Capacidad para cumplir plazos",
+                "Portfolio de trabajos anteriores"
+              ],
+              "salary": {
+                "min": 1500,
+                "max": 2000,
+                "currency": "USD"
+              },
+              "location": "Santiago",
+              "remote": true,
+              "type": "PART_TIME",
+              "category": "Redacción",
+              "applicationUrl": "https://contentlabs.com/careers/writer",
+              "contactEmail": "content@contentlabs.com"
+            },
+            {
+              "title": "Copywriter para agencia de publicidad",
+              "company": "CreativeWords",
+              "description": "Buscamos un copywriter creativo para desarrollar mensajes publicitarios impactantes para nuestros clientes. El candidato ideal debe tener excelente redacción y habilidad para contar historias.",
+              "requirements": [
+                "Portfolio con ejemplos de copywriting publicitario",
+                "Experiencia en redacción creativa",
+                "Capacidad para adaptar el tono según la marca",
+                "Conocimiento de marketing digital",
+                "Experiencia en campañas publicitarias"
+              ],
+              "salary": {
+                "min": 2000,
+                "max": 2800,
+                "currency": "USD"
+              },
+              "location": "Panamá",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Redacción",
+              "applicationUrl": "https://creativewords.com/careers",
+              "contactEmail": "copy@creativewords.com"
+            },
+            {
+              "title": "Editor de contenidos digitales",
+              "company": "DigitalPress",
+              "description": "Buscamos un editor de contenidos para supervisar la estrategia editorial, coordinar a redactores freelance y garantizar la calidad y coherencia de nuestras publicaciones digitales.",
+              "requirements": [
+                "3+ años de experiencia editorial",
+                "Excelentes habilidades de corrección y edición",
+                "Experiencia en gestión de equipos de redacción",
+                "Conocimiento de SEO y marketing de contenidos",
+                "Capacidad para planificar calendarios editoriales"
+              ],
+              "salary": {
+                "min": 2200,
+                "max": 3200,
+                "currency": "USD"
+              },
+              "location": "Madrid",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Redacción",
+              "applicationUrl": "https://digitalpress.es/empleo",
+              "contactEmail": "editor@digitalpress.es"
+            },
+            {
+              "title": "Redactor técnico para manuales de software",
+              "company": "TechDocs",
+              "description": "Necesitamos un redactor técnico para crear manuales de usuario, tutoriales y documentación de API para productos de software. El candidato debe simplificar conceptos complejos para usuarios finales.",
+              "requirements": [
+                "Experiencia en redacción técnica",
+                "Conocimiento de desarrollo de software",
+                "Familiaridad con herramientas de documentación",
+                "Capacidad para entender y explicar conceptos técnicos",
+                "Atención al detalle y precisión"
+              ],
+              "salary": {
+                "min": 2300,
+                "max": 3100,
+                "currency": "USD"
+              },
+              "location": "Bogotá",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Redacción",
+              "applicationUrl": "https://techdocs.co/careers",
+              "contactEmail": "docs@techdocs.co"
+            },
+            {
+              "title": "Redactor creativo para agencia de branding",
+              "company": "BrandStory",
+              "description": "Buscamos un redactor creativo para desarrollar narrativas de marca, eslóganes, manifiestos y textos para diferentes canales de comunicación que capturen la esencia de las marcas de nuestros clientes.",
+              "requirements": [
+                "Portfolio creativo con ejemplos variados",
+                "Experiencia en desarrollo de voz de marca",
+                "Capacidad para conceptualizar ideas creativas",
+                "Versatilidad para adaptar estilos según la marca",
+                "Conocimiento de branding y comunicación"
+              ],
+              "salary": {
+                "min": 2100,
+                "max": 3000,
+                "currency": "USD"
+              },
+              "location": "Buenos Aires",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Redacción",
+              "applicationUrl": "https://brandstory.com.ar/sumate",
+              "contactEmail": "creative@brandstory.com.ar"
+            },
+            {
+              "title": "Content Manager",
+              "company": "ContentHub",
+              "description": "Estamos buscando un Content Manager para desarrollar y ejecutar estrategias de contenido, supervisar la producción de contenidos y analizar su rendimiento para optimizar resultados.",
+              "requirements": [
+                "3+ años en gestión de contenidos",
+                "Experiencia en desarrollo de estrategias de contenido",
+                "Conocimiento de SEO y marketing digital",
+                "Capacidad para dirigir equipos de redactores",
+                "Habilidades analíticas para medir resultados"
+              ],
+              "salary": {
+                "min": 2500,
+                "max": 3500,
+                "currency": "USD"
+              },
+              "location": "Ciudad de México",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Redacción",
+              "applicationUrl": "https://contenthub.mx/unete",
+              "contactEmail": "talent@contenthub.mx"
+            },
+            {
+              "title": "Redactor SEO",
+              "company": "RankContent",
+              "description": "Buscamos un redactor especializado en SEO para crear contenidos optimizados que mejoren el posicionamiento en buscadores. El candidato debe combinar calidad editorial con técnicas avanzadas de SEO.",
+              "requirements": [
+                "Experiencia demostrable en redacción SEO",
+                "Conocimiento de keyword research",
+                "Familiaridad con herramientas SEO (Ahrefs, SEMrush, etc.)",
+                "Comprensión de algoritmos de búsqueda",
+                "Capacidad para crear contenido de valor para usuarios y buscadores"
+              ],
+              "salary": {
+                "min": 1800,
+                "max": 2600,
+                "currency": "USD"
+              },
+              "location": "Lima",
+              "remote": true,
+              "type": "FULL_TIME",
+              "category": "Redacción",
+              "applicationUrl": "https://rankcontent.com/jobs",
+              "contactEmail": "seo@rankcontent.com"
+            },
+            {
+              "title": "Redactor de newsletters",
+              "company": "EmailDigest",
+              "description": "Estamos buscando un redactor especializado en newsletters para crear contenido atractivo, informativo y con alta tasa de apertura. El candidato debe entender las particularidades del formato email.",
+              "requirements": [
+                "Experiencia en redacción para email marketing",
+                "Conocimiento de métricas de email (apertura, clics, etc.)",
+                "Capacidad para sintetizar información compleja",
+                "Creatividad para generar titulares atractivos",
+                "Conocimiento de segmentación de audiencias"
+              ],
+              "salary": {
+                "min": 1800,
+                "max": 2500,
+                "currency": "USD"
+              },
+              "location": "Santiago",
+              "remote": true,
+              "type": "PART_TIME",
+              "category": "Redacción",
+              "applicationUrl": "https://emaildigest.com/jobs",
+              "contactEmail": "editor@emaildigest.com"
+            }
+          ]
