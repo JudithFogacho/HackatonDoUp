@@ -148,8 +148,11 @@ class AuthController {
     try {
       const { nonce, username, walletAddress, profilePictureUrl } = req.body;
       
-      // Validate the nonce
-      if (!nonceStore.has(nonce)) {
+      console.log('Intentando autenticación alternativa con nonce:', nonce);
+      console.log('Nonces disponibles:', Array.from(nonceStore.keys()));
+      
+      // Validar el nonce
+      if (!nonce || !nonceStore.has(nonce)) {
         return res.status(401).json({ error: 'Invalid nonce' });
       }
       
@@ -162,24 +165,31 @@ class AuthController {
       
       // Delete used nonce
       nonceStore.delete(nonce);
+      console.log('Nonce validado y eliminado:', nonce);
       
-      // Find user by wallet address
-      let user = await UserModel.findOne({ walletAddress });
+      // Find user by wallet address or create new
+      let user;
+      
+      if (walletAddress) {
+        user = await UserModel.findOne({ walletAddress });
+      }
       
       // Create new user if doesn't exist
       if (!user) {
         user = new UserModel({
-          username,
-          walletAddress,
+          username: username || `user_${Math.random().toString(36).substring(2, 10)}`,
+          walletAddress, // Esto puede ser null/undefined, pero está bien
           profilePicture: profilePictureUrl,
           createdAt: new Date()
         });
         await user.save();
+        console.log('Nuevo usuario creado:', user._id);
       } else {
         // Update existing user information
-        user.username = username || user.username;
-        user.profilePicture = profilePictureUrl || user.profilePicture;
+        if (username) user.username = username;
+        if (profilePictureUrl) user.profilePicture = profilePictureUrl;
         await user.save();
+        console.log('Usuario existente actualizado:', user._id);
       }
       
       // Create JWT token
@@ -189,10 +199,16 @@ class AuthController {
         walletAddress: user.walletAddress
       });
       
-      return res.status(200).json({ access_token: token, token_type: 'bearer' });
+      return res.status(200).json({ 
+        token, 
+        user: {
+          id: user._id,
+          username: user.username
+        }
+      });
     } catch (error) {
       console.error('Wallet authentication error:', error);
-      return res.status(401).json({ error: 'Authentication failed' });
+      return res.status(401).json({ error: 'Authentication failed: ' + (error.message || '') });
     }
   }
 }
