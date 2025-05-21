@@ -19,6 +19,9 @@ const profileRoutes = require('./routes/profile.routes');
 // Initialize Express app
 const app = express();
 
+// Configure trust proxy - LÍNEA AÑADIDA
+app.set('trust proxy', 1);
+
 // Middleware
 app.use(cors());
 app.use(helmet());
