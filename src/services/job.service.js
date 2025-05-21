@@ -1,6 +1,5 @@
 const JobModel = require('../models/job.model.js');
 const UserJobModel = require('../models/user-job.model.js');
-const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
@@ -9,32 +8,29 @@ const path = require('path');
  */
 class JobService {
   /**
-   * Get jobs from API
-   * @returns {Promise<Array>} Array of jobs
-   */
-  async getJobsFromApi() {
-    try {
-      // Replace with actual API endpoint
-      const response = await axios.get('https://api.example.com/jobs');
-      return response.data;
-    } catch (error) {
-      console.error('Failed to fetch jobs from API:', error);
-      // Fallback to local JSON if API fails
-      return this.getJobsFromJson();
-    }
-  }
-
-  /**
    * Get jobs from local JSON file
    * @returns {Promise<Array>} Array of jobs
    */
   async getJobsFromJson() {
     try {
+      console.log("Intentando leer el archivo JSON...");
       const filePath = path.join(__dirname, '../../data/jobs.json');
+      console.log("Ruta del archivo:", filePath);
+      
+      if (!fs.existsSync(filePath)) {
+        console.error(`¡El archivo no existe en la ruta ${filePath}!`);
+        return [];
+      }
+      
       const data = fs.readFileSync(filePath, 'utf8');
-      return JSON.parse(data);
+      console.log(`Archivo leído. Tamaño: ${data.length} bytes`);
+      
+      const jobs = JSON.parse(data);
+      console.log(`JSON parseado correctamente. Se encontraron ${jobs.length} trabajos.`);
+      
+      return jobs;
     } catch (error) {
-      console.error('Failed to read jobs from JSON:', error);
+      console.error('Error al leer o parsear el archivo JSON:', error);
       return [];
     }
   }
@@ -45,25 +41,62 @@ class JobService {
    */
   async seedJobs() {
     try {
-      const count = await JobModel.countDocuments();
+      console.log("Iniciando proceso de carga de trabajos...");
       
-      // Only seed if there are no jobs
-      if (count === 0) {
-        let jobs;
+      // Forzar la eliminación de trabajos existentes
+      const existingCount = await JobModel.countDocuments();
+      console.log(`Se encontraron ${existingCount} trabajos existentes en la base de datos.`);
+      
+      if (existingCount > 0) {
+        console.log("Eliminando trabajos existentes...");
+        await JobModel.deleteMany({});
+        console.log("Trabajos existentes eliminados.");
+      }
+      
+      // Cargar trabajos desde el JSON
+      const jobs = await this.getJobsFromJson();
+      
+      if (jobs && jobs.length > 0) {
+        console.log(`Insertando ${jobs.length} trabajos en la base de datos...`);
         
+        // Insertar trabajos con manejo de errores
         try {
-          jobs = await this.getJobsFromApi();
-        } catch (error) {
-          jobs = await this.getJobsFromJson();
-        }
-        
-        if (jobs && jobs.length > 0) {
           await JobModel.insertMany(jobs);
-          console.log(`Seeded ${jobs.length} jobs`);
+          console.log(`¡${jobs.length} trabajos insertados correctamente!`);
+          
+          // Verificar que los trabajos se insertaron
+          const insertedCount = await JobModel.countDocuments();
+          console.log(`Verificación: Hay ${insertedCount} trabajos en la base de datos.`);
+          
+          // Verificar categorías disponibles
+          const categories = await JobModel.distinct('category');
+          console.log(`Categorías disponibles: ${categories.join(', ')}`);
+        } catch (insertError) {
+          console.error('Error al insertar trabajos:', insertError);
+          
+          // Intentar insertar uno por uno para identificar problemas
+          if (insertError.name === 'ValidationError' || insertError.name === 'BulkWriteError') {
+            console.log("Intentando insertar trabajos individualmente para identificar errores...");
+            let successCount = 0;
+            
+            for (let i = 0; i < jobs.length; i++) {
+              try {
+                const job = new JobModel(jobs[i]);
+                await job.save();
+                successCount++;
+              } catch (individualError) {
+                console.error(`Error al insertar trabajo #${i + 1}:`, individualError);
+              }
+            }
+            
+            console.log(`Se insertaron ${successCount} de ${jobs.length} trabajos individualmente.`);
+          }
         }
+      } else {
+        console.error("No se encontraron trabajos en el archivo JSON.");
       }
     } catch (error) {
-      console.error('Job seeding error:', error);
+      console.error('Error general en la carga de trabajos:', error);
     }
   }
 
@@ -75,11 +108,27 @@ class JobService {
    */
   async getJobs(filters = {}, pagination = { page: 1, limit: 10 }) {
     try {
+      // Verificar que hay trabajos en la base de datos
+      const totalJobs = await JobModel.countDocuments();
+      console.log(`Total de trabajos en la base de datos: ${totalJobs}`);
+      
+      // Si no hay trabajos, intentar cargarlos
+      if (totalJobs === 0) {
+        console.log("No hay trabajos en la base de datos. Intentando cargarlos...");
+        await this.seedJobs();
+      }
+      
       const query = {};
       
       // Apply filters
       if (filters.search) {
-        query.$text = { $search: filters.search };
+        // Buscar en título, descripción, empresa y categoría
+        query.$or = [
+          { title: { $regex: new RegExp(filters.search, 'i') } },
+          { description: { $regex: new RegExp(filters.search, 'i') } },
+          { company: { $regex: new RegExp(filters.search, 'i') } },
+          { category: { $regex: new RegExp(filters.search, 'i') } }
+        ];
       }
       
       if (filters.category) {
@@ -102,8 +151,12 @@ class JobService {
         query['salary.min'] = { $gte: Number(filters.minSalary) };
       }
       
-      // Only show active jobs
-      query.active = true;
+      // Only show active jobs (si existe el campo)
+      if ('active' in JobModel.schema.paths) {
+        query.active = true;
+      }
+      
+      console.log("Filtros aplicados:", JSON.stringify(query));
       
       // Calculate pagination
       const page = parseInt(pagination.page) || 1;
@@ -115,6 +168,8 @@ class JobService {
         .sort({ postedAt: -1 })
         .skip(skip)
         .limit(limit);
+      
+      console.log(`Se encontraron ${jobs.length} trabajos que coinciden con los filtros.`);
       
       // Get total count for pagination
       const total = await JobModel.countDocuments(query);
@@ -129,7 +184,7 @@ class JobService {
         }
       };
     } catch (error) {
-      console.error('Error getting jobs:', error);
+      console.error('Error al obtener trabajos:', error);
       throw new Error('Failed to get jobs');
     }
   }
@@ -149,7 +204,7 @@ class JobService {
       
       return job;
     } catch (error) {
-      console.error('Error getting job:', error);
+      console.error('Error al obtener trabajo por ID:', error);
       throw new Error('Failed to get job');
     }
   }
@@ -274,11 +329,30 @@ class JobService {
    */
   async getCategories() {
     try {
+      // Intentar obtener categorías de la base de datos
       const categories = await JobModel.distinct('category');
+      
+      // Si no hay categorías, intentar cargar los trabajos primero
+      if (categories.length === 0) {
+        console.log("No se encontraron categorías. Intentando cargar trabajos primero...");
+        await this.seedJobs();
+        return await JobModel.distinct('category');
+      }
+      
       return categories;
     } catch (error) {
       console.error('Error getting job categories:', error);
-      throw new Error('Failed to get job categories');
+      
+      // Si hay un error en la base de datos, intentar obtener categorías del JSON directamente
+      try {
+        const jobs = await this.getJobsFromJson();
+        const categories = [...new Set(jobs.map(job => job.category))];
+        console.log("Categorías obtenidas directamente del JSON:", categories);
+        return categories;
+      } catch (jsonError) {
+        console.error('Error getting categories from JSON:', jsonError);
+        throw new Error('Failed to get job categories');
+      }
     }
   }
 
