@@ -11,32 +11,44 @@ class WorldIDService {
    * @returns {Promise<Object>} Verification result
    */
   // src/services/world-id.service.js
-async verifyProof(verificationData) {
-  const headers = {
-    'Authorization': `Bearer ${worldIdConfig.API_KEY}`,
-    'Content-Type': 'application/json'
-  };
-
-  const payload = {
-    merkle_root: verificationData.merkle_root,
-    nullifier_hash: verificationData.nullifier_hash,
-    proof: verificationData.proof,
-    verification_level: verificationData.credential_type,
-    action: verificationData.action || worldIdConfig.ACTION_NAME,
-    signal: verificationData.signal || '' // Asegúrate de que el signal se pase correctamente
-  };
-
-  console.log('Datos de verificación enviados a World ID:', payload); // Para depuración
-
-  try {
-    const verifyUrl = `${worldIdConfig.API_BASE_URL}/verify`;
-    const response = await axios.post(verifyUrl, payload, { headers });
-    return { status: 'verified', data: response.data };
-  } catch (error) {
-    console.error('World ID verification failed:', error.response?.data || error.message);
-    throw new Error('Verification failed');
+  async verifyProof(verificationData) {
+    const headers = {
+      'Authorization': `Bearer ${worldIdConfig.API_KEY}`,
+      'Content-Type': 'application/json'
+    };
+  
+    // Asegúrate de que estos campos coincidan exactamente con lo que espera la API
+    const payload = {
+      merkle_root: verificationData.merkle_root,
+      nullifier_hash: verificationData.nullifier_hash,
+      proof: verificationData.proof,
+      verification_level: verificationData.credential_type,
+      action: verificationData.action || worldIdConfig.ACTION_NAME,
+      signal: verificationData.signal || ''
+    };
+  
+    console.log('Payload de verificación a World ID:', {
+      ...payload,
+      nullifier_hash: payload.nullifier_hash.substring(0, 10) + '...',
+      proof: payload.proof.substring(0, 10) + '...'
+    });
+  
+    try {
+      const verifyUrl = `${worldIdConfig.API_BASE_URL}/verify`;
+      const response = await axios.post(verifyUrl, payload, { headers });
+      console.log('Respuesta de World ID:', response.data);
+      return { status: 'verified', data: response.data };
+    } catch (error) {
+      console.error('World ID verification failed:');
+      if (error.response) {
+        console.error('Status:', error.response.status);
+        console.error('Data:', error.response.data);
+      } else {
+        console.error('Error:', error.message);
+      }
+      throw new Error(`Verification failed: ${error.response?.data?.error || error.message}`);
+    }
   }
-}
 
   /**
    * Generates a nonce for wallet authentication

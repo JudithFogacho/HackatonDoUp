@@ -42,6 +42,36 @@ class AuthController {
    */
   async verifyWorldId(req, res) {
     try {
+      // Log datos recibidos para depuración
+      console.log('Datos de verificación recibidos:', {
+        action: req.body.action,
+        signal: req.body.signal,
+        nullifier_hash: req.body.nullifier_hash && req.body.nullifier_hash.substring(0, 10) + '...'
+      });
+      
+      // AÑADIR ESTA SECCIÓN: Validar el nonce antes de verificar
+      const nonce = req.body.signal;
+      
+      // Verificar si el nonce existe en el almacenamiento
+      if (!nonce || !nonceStore.has(nonce)) {
+        console.error('Nonce no encontrado o inválido:', nonce);
+        console.log('Nonces disponibles:', Array.from(nonceStore.keys()));
+        return res.status(401).json({ error: 'Invalid nonce' });
+      }
+      
+      // Verificar si el nonce ha expirado
+      const timestamp = nonceStore.get(nonce);
+      if (Date.now() - timestamp > 5 * 60 * 1000) {
+        nonceStore.delete(nonce);
+        console.error('Nonce expirado:', nonce);
+        return res.status(401).json({ error: 'Nonce expired' });
+      }
+      
+      // Eliminar el nonce después de usarlo
+      nonceStore.delete(nonce);
+      console.log('Nonce validado y eliminado:', nonce);
+      
+      // Continuar con la verificación
       const result = await worldIdService.verifyProof(req.body);
       
       // Check if user exists by nullifier hash
@@ -67,9 +97,23 @@ class AuthController {
           worldIdVerified: true
         }
       });
-    } catch (error) {
+    } // En caso de error de verificación
+    catch (error) {
       console.error('World ID verification error:', error);
-      return res.status(401).json({ error: 'Verification failed' });
+      let errorMessage = 'Verification failed';
+      
+      if (error.message) {
+        errorMessage += ': ' + error.message;
+      }
+      
+      if (error.response && error.response.data) {
+        errorMessage += ' - ' + JSON.stringify(error.response.data);
+      }
+      
+      return res.status(401).json({ 
+        error: errorMessage,
+        code: error.response?.status || 500
+      });
     }
   }
 
