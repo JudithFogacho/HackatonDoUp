@@ -219,9 +219,12 @@ class AuthController {
       // Generar una "dirección de billetera" única aleatoria para evitar duplicados
       const randomWalletAddress = 'demo_' + Math.random().toString(36).substring(2, 15);
       
+      // Asegúrate de que el nickname se asigna correctamente al username
+      const username = nickname || `DemoUser_${Math.random().toString(36).substring(2, 10)}`;
+      
       // Crear un usuario temporal para pruebas con una dirección única
       const user = new UserModel({
-        username: nickname || `DemoUser_${Math.random().toString(36).substring(2, 10)}`,
+        username: username, // Usar la variable username creada arriba
         walletAddress: randomWalletAddress, // Usar una dirección única para evitar errores de duplicados
         createdAt: new Date()
       });
@@ -232,18 +235,18 @@ class AuthController {
       // Create JWT token
       const token = jwtUtils.createAccessToken({ 
         userId: user._id,
-        username: user.username,
+        username: username, // Usar la variable username creada arriba
         walletAddress: user.walletAddress,
         isDemoUser: true
       });
       
-      console.log('Demo login completado para:', user.username);
+      console.log('Demo login completado para:', username); // Usar la variable username creada arriba
       
       return res.status(200).json({ 
         token, 
         user: {
           id: user._id,
-          username: user.username,
+          username: username, // Usar la variable username creada arriba
           isDemoUser: true
         }
       });
