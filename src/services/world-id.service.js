@@ -10,30 +10,33 @@ class WorldIDService {
    * @param {Object} verificationData - Proof data from World ID
    * @returns {Promise<Object>} Verification result
    */
-  async verifyProof(verificationData) {
-    const headers = {
-      'Authorization': `Bearer ${worldIdConfig.API_KEY}`,
-      'Content-Type': 'application/json'
-    };
+  // src/services/world-id.service.js
+async verifyProof(verificationData) {
+  const headers = {
+    'Authorization': `Bearer ${worldIdConfig.API_KEY}`,
+    'Content-Type': 'application/json'
+  };
 
-    const payload = {
-      merkle_root: verificationData.merkle_root,
-      nullifier_hash: verificationData.nullifier_hash,
-      proof: verificationData.proof,
-      verification_level: verificationData.credential_type,
-      action: verificationData.action || worldIdConfig.ACTION_NAME,
-      signal: verificationData.signal || ''
-    };
+  const payload = {
+    merkle_root: verificationData.merkle_root,
+    nullifier_hash: verificationData.nullifier_hash,
+    proof: verificationData.proof,
+    verification_level: verificationData.credential_type,
+    action: verificationData.action || worldIdConfig.ACTION_NAME,
+    signal: verificationData.signal || '' // Asegúrate de que el signal se pase correctamente
+  };
 
-    try {
-      const verifyUrl = `${worldIdConfig.API_BASE_URL}/verify`;
-      const response = await axios.post(verifyUrl, payload, { headers });
-      return { status: 'verified', data: response.data };
-    } catch (error) {
-      console.error('World ID verification failed:', error.response?.data || error.message);
-      throw new Error('Verification failed');
-    }
+  console.log('Datos de verificación enviados a World ID:', payload); // Para depuración
+
+  try {
+    const verifyUrl = `${worldIdConfig.API_BASE_URL}/verify`;
+    const response = await axios.post(verifyUrl, payload, { headers });
+    return { status: 'verified', data: response.data };
+  } catch (error) {
+    console.error('World ID verification failed:', error.response?.data || error.message);
+    throw new Error('Verification failed');
   }
+}
 
   /**
    * Generates a nonce for wallet authentication
