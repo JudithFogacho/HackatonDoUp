@@ -169,26 +169,12 @@ class AuthController {
    */
   async walletAuth(req, res) {
     try {
-      const { nonce, nickname, walletAddress, profilePictureUrl } = req.body;
+      const { walletAddress, nickname, profilePictureUrl } = req.body;
       
-      console.log('Attempting alternative authentication with nonce:', nonce);
-      console.log('Available nonces:', Array.from(nonceStore.keys()));
-      
-      // Validate nonce
-      if (!nonce || !nonceStore.has(nonce)) {
-        return res.status(401).json({ error: 'Invalid nonce' });
-      }
-      
-      const timestamp = nonceStore.get(nonce);
-      // Check if nonce is expired (5 minutes)
-      if (Date.now() - timestamp > 5 * 60 * 1000) {
-        nonceStore.delete(nonce);
-        return res.status(401).json({ error: 'Nonce expired' });
-      }
-      
-      // Delete used nonce
-      nonceStore.delete(nonce);
-      console.log('Nonce validated and removed:', nonce);
+      console.log('Attempting wallet authentication with:', { 
+        walletAddress: walletAddress?.substring(0, 10),
+        nickname 
+      });
       
       // Find user by wallet address or create new
       let user;
@@ -201,7 +187,7 @@ class AuthController {
       if (!user) {
         user = new UserModel({
           nickname: nickname || `user_${Math.random().toString(36).substring(2, 10)}`,
-          walletAddress, // This can be null/undefined, but that's okay
+          walletAddress,
           profilePicture: profilePictureUrl,
           createdAt: new Date()
         });
@@ -226,7 +212,9 @@ class AuthController {
         token, 
         user: {
           id: user._id,
-          nickname: user.nickname
+          nickname: user.nickname,
+          walletAddress: user.walletAddress,
+          profilePicture: user.profilePicture
         }
       });
     } catch (error) {
